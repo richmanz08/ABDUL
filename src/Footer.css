@@ -1,0 +1,73 @@
+.FooterArea {
+  font-size: 50px;
+  background-color: #242729;
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.Boxscale {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  /* border-style: solid; */
+}
+.ColumOne {
+  width: 150px;
+  /* border-style: solid; */
+  display: flex;
+  justify-content: center;
+}
+.ColumTwo {
+  width: 200px;
+
+  /* border-style: solid; */
+}
+.ColumThree {
+  width: 200px;
+
+  /* border-style: solid; */
+}
+.ColumFour {
+  width: 200px;
+
+  /* border-style: solid;s */
+}
+.ColumFive {
+  width: 400px;
+  display: flex;
+  /* border-style: solid; */
+  flex-direction: column;
+}
+.logoabdul1 {
+  width: 120px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.topiccss {
+  font-size: 30px;
+  font-family: "kanit";
+  color: #bbc0c4;
+  margin-top: 15px;
+}
+.csscolumtwo {
+  font-size: 16px;
+  font-family: "kanit";
+  color: #848d95;
+  margin: 2px;
+  cursor: pointer;
+  width: fit-content;
+  /* margin-top: 15px; */
+}
+.csscolumtwo:hover {
+  color: #d2d5d8;
+  font-size: 18px;
+}
+.items1-columfive {
+  margin-top: 125px;
+  margin-left: 100px;
+}
+.items2-columfive {
+  margin-left: 100px;
+}
