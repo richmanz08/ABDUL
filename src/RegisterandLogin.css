@@ -1,10 +1,10 @@
-.Frame2 {
+.Frame3 {
   font-size: 50px;
   background-color: black;
   width: 100vw;
   height: 100vh;
 }
-.ContainerLogin {
+.ContainerRegister {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
 }
-.BoxLogin {
+.BoxRegister {
   width: 700px;
   height: 450px;
   display: flex;
@@ -20,7 +20,7 @@
   background: linear-gradient(to right, #133330, #8cbdb9) no-repeat 0 0 / cover;
   margin-bottom: 100px;
 }
-.InputZoneLogin {
+.InputZoneRegister {
   width: 350px;
   height: 100%;
   display: flex;
@@ -29,15 +29,19 @@
   justify-content: center;
   align-items: center;
 }
-.ShowZoneLogin {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
+.text-Register1 {
+  font-family: "kanit";
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 35px;
+  color: #2d3e4e;
 }
-.usernameandpasswordCSS {
+.text-Register2 {
+  font-family: "kanit";
+  font-size: 12px;
+  color: #656769;
+}
+.EUScss {
   background: #eee;
   border: none;
   padding: 12px 15px;
@@ -46,19 +50,7 @@
   font-family: "kanit";
   outline: none;
 }
-.text-login {
-  font-family: "kanit";
-  font-weight: 600;
-  font-size: 3rem;
-  margin-bottom: 35px;
-  color: #2d3e4e;
-}
-.text-login2 {
-  font-family: "kanit";
-  font-size: 12px;
-  color: #656769;
-}
-.ButtonSignIn {
+.ButtonRegister {
   font-family: "kanit";
   margin-top: 20px;
   border-radius: 20px;
@@ -74,10 +66,32 @@
   text-transform: uppercase;
   transition: tranform 80ms ease-in;
 }
-.ButtonSignIn:active {
+.ButtonRegister:active {
   transform: scale(0.92);
 }
-.ButtonShowZone {
+.ShowZoneRegis {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.text-ShowZone1-regis {
+  font-family: "kanit";
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e8eceb;
+  margin-bottom: 30px;
+}
+.text-ShowZone2-regis {
+  font-family: "kanit";
+  font-size: 0.9rem;
+  width: 80%;
+  text-align: center;
+  color: #e8eceb;
+}
+.ButtonShowZone-Regis {
   font-family: "kanit";
   margin-top: 20px;
   border-radius: 20px;
@@ -94,24 +108,10 @@
   text-transform: uppercase;
   transition: tranform 80ms ease-in;
 }
-.ButtonShowZone:active {
+.ButtonShowZone-Regis:active {
   transform: scale(0.92);
 }
-.text-ShowZone1 {
-  font-family: "kanit";
-  font-size: 2rem;
-  font-weight: 600;
-  color: #e8eceb;
-  margin-bottom: 30px;
-}
-.text-ShowZone2 {
-  font-family: "kanit";
-  font-size: 0.9rem;
-  width: 80%;
-  text-align: center;
-  color: #e8eceb;
-}
-.layerLogin {
+.layerRegis {
   display: flex;
   justify-content: center;
   flex-direction: column;

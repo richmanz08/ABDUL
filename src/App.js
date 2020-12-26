@@ -1,23 +1,31 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from "react";
+import { Route } from "react-router-dom";
+import LoginandRegister from "./LoginandRegister";
+import Loginpage from "./Loginpage";
+import Mainwebsite from "./Mainwebsite";
+import RegisterandLogin from "./RegisterandLogin";
+import Topper from "./Topper";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to relosad.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Route path="/" exact={true} component={Mainwebsite} />
+        <Route path="/Loginpage" exact={true} component={Loginpage} />
+        <Route
+          path="/LoginandRegister"
+          exact={true}
+          component={LoginandRegister}
+        />
+        <Route path="/Topper" exact={true} component={Topper} />
+        <Route
+          path="/RegisterandLogin"
+          exact={true}
+          component={RegisterandLogin}
+        />
+        <Route path="/Mainwebsite" exact={true} component={Mainwebsite} />
+      </div>
+    );
+  }
 }
-
 export default App;
