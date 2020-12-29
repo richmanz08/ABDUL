@@ -4,13 +4,17 @@ import Navbar from "./Navbar";
 import profile from "./profile";
 import inventory from "./inventory";
 import PostkratuManagement from "./PostkratuManagement";
+import PageDefault from "./PageDefault";
 function Mainwebsite() {
   return (
     <div className="main">
       <Router>
         <Navbar />
+
         <Switch>
-          <Route path="/" exact component={profile} />
+          <Route path="/" exact={true} component={PageDefault} />
+          <Route path="/PageDefault" exact={true} component={PageDefault} />
+          <Route path="/profile" component={profile} />
           <Route path="/inventory" component={inventory} />
           <Route path="/PostkratuManagement" component={PostkratuManagement} />
         </Switch>

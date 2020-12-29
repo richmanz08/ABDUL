@@ -26,7 +26,7 @@
 .body {
   width: 100vw;
   height: 800px;
-  background-color: #8cbdb9;
+  background-color: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@
 .txt-bd {
   font-size: 3rem;
   font-family: "kanit";
-  color: #2d3e4e;
+  color: #fff;
   font-weight: 500;
 }
 .txt-bddetail {

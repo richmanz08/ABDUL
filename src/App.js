@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import LoginandRegister from "./LoginandRegister";
 import Loginpage from "./Loginpage";
 import Mainwebsite from "./Mainwebsite";
+import PageDefault from "./PageDefault";
 import RegisterandLogin from "./RegisterandLogin";
 import Topper from "./Topper";
 
@@ -24,6 +25,7 @@ class App extends Component {
           component={RegisterandLogin}
         />
         <Route path="/Mainwebsite" exact={true} component={Mainwebsite} />
+        {/* <Route path="/PageDefault" exact={true} component={PageDefault} /> */}
       </div>
     );
   }

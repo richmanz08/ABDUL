@@ -1,0 +1,108 @@
+.PageDefaultCTN {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContainerPDF {
+  width: 1200px;
+  height: 100vh;
+  overflow: hidden;
+  /* border-style: solid; */
+}
+.PictureSlide-Container {
+  width: 100%;
+  height: 250px;
+  /* border-style: solid; */
+  position: relative;
+  overflow: hidden;
+}
+.PictureSet {
+  width: 100%;
+  height: 100%;
+}
+.slideshow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 31s infinite;
+}
+.slideshow-item:nth-child(1) {
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2) {
+  animation-delay: 10s;
+}
+.slideshow-item:nth-child(3) {
+  animation-delay: 20s;
+}
+
+.slideshow-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes cycleImages {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.User-Post-Container {
+  width: 100%;
+  /* border-style: solid; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.Box-post-ctn {
+  width: 100%;
+  height: fit-content;
+  /* background-color: rgb(242, 235, 245); */
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.heder-post {
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.detail-post {
+  width: 100%;
+  height: 200px;
+  /* border-style: solid; */
+  padding: 1rem;
+  font-family: "kanit";
+  color: rgb(231, 214, 117);
+  font-size: 15px;
+}
+.comment-post {
+  width: 100%;
+  height: 65px;
+  border-style: solid;
+}
+.pictureSET {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.username-show {
+  font-family: "kanit";
+  color: #eee;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.timing-show {
+  font-family: "kanit";
+  color: green;
+  margin-left: 50px;
+  font-size: 12px;
+}

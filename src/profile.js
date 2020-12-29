@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./profile.css";
 function profile() {
   return (
-    <div className="profile">
-      <h1>profile</h1>
+    <div className="profileCTN">
+      <div>profile</div>
     </div>
   );
 }
