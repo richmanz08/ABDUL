@@ -96,6 +96,26 @@ function Navbar() {
               ></img>
             </div>
           </Link>
+          <nav
+            className={
+              userDropdown ? "dropdown-user activeDropdown" : "dropdown-user "
+            }
+          >
+            <div className="dropdown-menu-items" onClick={showDropdown}>
+              {DropdownUser.map((item, index) => {
+                return (
+                  <div key={index} className={item.className}>
+                    <Link to={item.path} style={{ textDecoration: "none" }}>
+                      <div className="DDitems">
+                        {item.icons}
+                        <div className="fonttitleDD">{item.title}</div>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </nav>
         </div>
       </div>
 
@@ -133,26 +153,6 @@ function Navbar() {
               );
             })}
           </div>
-        </div>
-      </nav>
-      <nav
-        className={
-          userDropdown ? "dropdown-user activeDropdown" : "dropdown-user "
-        }
-      >
-        <div className="dropdown-menu-items" onClick={showDropdown}>
-          {DropdownUser.map((item, index) => {
-            return (
-              <div key={index} className={item.className}>
-                <Link to={item.path} style={{ textDecoration: "none" }}>
-                  <div className="DDitems">
-                    {item.icons}
-                    <div className="fonttitleDD">{item.title}</div>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
         </div>
       </nav>
     </div>

@@ -18,6 +18,7 @@
   align-items: center;
   width: 1200px;
 }
+
 .navbarlogo {
   margin-left: 10px;
   width: 100px;
@@ -247,15 +248,12 @@
   padding: 0 6px;
 }
 .Userzone {
-  /* background-color: #e8eceb; */
-  width: fit-content;
+  /* width: 100px; */
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
-  /* justify-content: flex-end; */
-  /* align-content: flex-end; */
+  margin-right: 15px;
 }
 /* dropdown----------------------------------------------------------- */
 .icon-button {
@@ -276,13 +274,15 @@
   position: fixed;
   z-index: 99;
   top: -100%;
-  left: 90%;
+  /* margin-right: 20px; */
   transition: 850ms;
+  right: 15px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .dropdown-user.activeDropdown {
   top: 55px;
   transition: 350ms;
+  right: 15px;
 }
 .fonttitleDD {
   font-size: 14px;
@@ -313,4 +313,9 @@
   margin-top: 25px;
   /* align-items: center; */
   /* justify-content: center; */
+}
+@media (max-width: 1200px) {
+  .containnercenter {
+    width: 700px;
+  }
 }

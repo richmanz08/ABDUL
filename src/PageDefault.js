@@ -35,17 +35,23 @@ function PageDefault() {
               <div className="username-show">Arnon Ruengrueang</div>
               <div className="timing-show">12 ชั่วโมง</div>
             </div>
-            <div className="detail-post">
-              Galaxy Z Fold2 5G สมาร์ทโฟนจอพับได้แห่งอนาคต มาพร้อมกล้อง 5 ตัว
-              มอบประสบการณ์ถ่ายภาพรูปแบบใหม่ และสิทธิพิเศษที่ไม่เหมือนใคร Galaxy
-              Z Fold2 5G สมาร์ทโฟนจอพับได้แห่งอนาคต มาพร้อมกล้อง 5 ตัว
-              มอบประสบการณ์ถ่ายภาพรูปแบบใหม่ และสิทธิพิเศษที่ไม่เหมือนใครGalaxy
-              Z Fold2 5G สมาร์ทโฟนจอพับได้แห่งอนาคต มาพร้อมกล้อง 5 ตัว
-              มอบประสบการณ์ถ่ายภาพรูปแบบใหม่ และสิทธิพิเศษที่ไม่เหมือนใครGalaxy
-              Z Fold2 5G สมาร์ทโฟนจอพับได้แห่งอนาคต มาพร้อมกล้อง 5 ตัว
-              มอบประสบการณ์ถ่ายภาพรูปแบบใหม่ และสิทธิพิเศษที่ไม่เหมือนใคร
+            <div className="boxdetail">
+              <div className="detail-post">เครียดเว้ย</div>
             </div>
-            <div className="comment-post"></div>
+            <div className="comment-post">
+              <div className="ZoneButton-cp">
+                <div className="setboxLike">
+                  <img
+                    className="likethis"
+                    src="./IMGpageDF/likethis.png"
+                  ></img>
+                </div>
+                <div className="numberlike">120</div>
+              </div>
+              <div className="ZoneComment-cp">
+                <div className="think">แสดงความคิดเห็น</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
