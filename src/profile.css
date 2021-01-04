@@ -1,6 +1,189 @@
 .profileCTN {
   width: 100vw;
   height: 100vh;
-  background-color: #212511;
-  font-size: 200px;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+}
+.Box-profile {
+  margin-top: 20px;
+  width: 1200px;
+  height: 600px;
+  background-color: #2424249c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Boxitems1-profile {
+  width: 400px;
+  height: 500px;
+  font-family: "kanit";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 180px;
+  border-radius: 50%;
+}
+.changephoto {
+  font-family: "kanit";
+  background-color: #1d1d1d00;
+  border-style: solid;
+  outline: none;
+  display: flex;
+  color: #e4e6e5;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 135px;
+  justify-content: center;
+  margin-top: 40px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #6bd53a, #d53a9d);
+}
+.changephoto:active {
+  transform: scale(0.91);
+}
+.camera-set {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.set-star {
+  width: 20px;
+  height: 20px;
+}
+.star-point {
+  font-size: 12px;
+  color: #f7c05a;
+}
+.GROUP-PROFILE-1 {
+  display: flex;
+}
+.G-1-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  margin-left: 16px;
+}
+.G-1-2 {
+  display: flex;
+  margin-top: 5px;
+}
+.header-pf {
+  font-size: 20px;
+  color: #f8ecec;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border: 8px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.Username-user {
+  font-size: 12px;
+  color: #eee;
+}
+.username-items {
+  font-size: 16px;
+  color: #ffffff;
+}
+.Description-user {
+  width: 370px;
+  padding: 1rem;
+  height: 100px;
+  font-size: 13px;
+  margin-top: 20px;
+  background: linear-gradient(to top right, #9261e7, #ec8ac8);
+}
+.CONTAINER-ssa {
+  display: flex;
+  width: 350px;
+  color: #e4e6e5;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 150px;
+}
+.box-status {
+  display: flex;
+  align-items: center;
+}
+.box-sex {
+  display: flex;
+  align-items: center;
+}
+.box-age {
+  display: flex;
+  align-items: center;
+}
+.status-user {
+  font-size: 13px;
+}
+.Answer-status-user {
+  color: #eee;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.men-or-male {
+  font-size: 13px;
+}
+.Answer-men-or-male {
+  font-size: 15px;
+  margin-left: 15px;
+}
+.age-profile {
+  font-size: 13px;
+}
+.Answer-age-profile {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 3px;
+}
+.CARD-Name {
+  width: 100%;
+  /* font-family: "kanit"; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Set-button-card {
+  width: 100px;
+  height: 30px;
+  background-color: inherit;
+  font-family: "kanit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid;
+  outline: none;
+  cursor: pointer;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #6bd53a, #d53a9d);
+  color: #e4e6e5;
+  color: #e4e6e5;
+}
+.Set-icon-card {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.Set-button-card:active {
+  transform: scale(0.85);
+}
+/* 55555555555555555555555555555555555 */
+.Boxitems2-profile {
+  margin: 1rem;
+  width: 700px;
+  height: 500px;
+  border: 1px solid rgb(255, 255, 255);
+  color: #e4e6e5;
+  font-size: 12px;
 }

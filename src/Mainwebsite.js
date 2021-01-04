@@ -12,8 +12,8 @@ function Mainwebsite() {
         <Navbar />
 
         <Switch>
-          <Route path="/" exact={true} component={PageDefault} />
-          <Route path="/PageDefault" exact={true} component={PageDefault} />
+          <Route path="/Mainwebsite" exact={true} component={PageDefault} />
+          <Route path="/PageDefault" component={PageDefault} />
           <Route path="/profile" component={profile} />
           <Route path="/inventory" component={inventory} />
           <Route path="/PostkratuManagement" component={PostkratuManagement} />
