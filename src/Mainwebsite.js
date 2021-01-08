@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import profile from "./profile";
-import inventory from "./inventory";
+import Inventory from "./Inventory";
 import PostkratuManagement from "./PostkratuManagement";
 import PageDefault from "./PageDefault";
 function Mainwebsite() {
@@ -12,11 +12,16 @@ function Mainwebsite() {
         <Navbar />
 
         <Switch>
+          <Route path="/" exact={true} component={PageDefault} />
           <Route path="/Mainwebsite" exact={true} component={PageDefault} />
-          <Route path="/PageDefault" component={PageDefault} />
-          <Route path="/profile" component={profile} />
-          <Route path="/inventory" component={inventory} />
-          <Route path="/PostkratuManagement" component={PostkratuManagement} />
+          <Route path="/PageDefault" exact={true} component={PageDefault} />
+          <Route path="/profile" exact={true} component={profile} />
+          <Route path="/Inventory" exact={true} component={Inventory} />
+          <Route
+            path="/PostkratuManagement"
+            exact={true}
+            component={PostkratuManagement}
+          />
         </Switch>
       </Router>
     </div>

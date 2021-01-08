@@ -46,24 +46,39 @@ function profile() {
           </div>
         </div>
         <div className="Boxitems2-profile">
-          <div>ข้อมูลส่วนบุคคล</div>
-          <div>Email</div>
-          <div>arnonruengrueang@hotmail.com</div>
-          <div>ยูสเซอร์เนม</div>
-          <div>Richmanz08</div>
-          <div>ชื่อ-นามสกุล</div>
-          <div>อานนท์ รุ่งเรือง</div>
-          <div>ชื่อเล่น</div>
-          <div>นนท์</div>
-          <div>สถานะ</div>
-          <div>แอดมิน</div>
-          <div>เพศ</div>
-          <div>ชาย</div>
-          <div>อายุ</div>
-          <div>21</div>
-          <div>เบอร์โทร</div>
-          <div>0984437173</div>
+          <div className="HeaderProfile-private">ข้อมูลส่วนบุคคล</div>
+          <div className="Row-1-profile">
+            <div className="R1-ITEMS-1 R-ITEMS-set">Email</div>
+            <div className="R1-ITEMS-2 set-box-R">
+              arnonruengrueang@hotmail.com
+            </div>
+          </div>
+          <div className="Row-2-profile">
+            <div className="R2-ITEMS-1 R-ITEMS-set">ยูสเซอร์เนม</div>
+            <div className="R2-ITEMS-2 set-box-R">Richmanz08</div>
+          </div>
+          <div className="Row-3-profile">
+            <div className="R3-ITEMS-1 R-ITEMS-set">ชื่อ-นามสกุล</div>
+            <div className="R3-ITEMS-2 set-box-R">อานนท์ รุ่งเรือง</div>
+            <div className="R3-ITEMS-3 R-ITEMS-set">ชื่อเล่น</div>
+            <div className="R3-ITEMS-4 set-box-R">นนท์</div>
+          </div>
+          <div className="Row-4-profile">
+            <div className="R4-ITEMS-1 R-ITEMS-set">สถานะ</div>
+            <div className="R4-ITEMS-2 set-box-R">แอดมิน</div>
+            <div className="R4-ITEMS-3 R-ITEMS-set">เพศ</div>
+            <div className="R4-ITEMS-4 set-box-R">ชาย</div>
+            <div className="R4-ITEMS-5 R-ITEMS-set">อายุ</div>
+            <div className="R4-ITEMS-6 set-box-R">21</div>
+          </div>
+          <div className="Row-5-profile">
+            <div className="R5-ITEMS-1 R-ITEMS-set">เบอร์โทร</div>
+            <div className="R5-ITEMS-2 set-box-R">0984437173</div>
+          </div>
           <div></div>
+          <div className="edit-box">
+            <button className="btn-edit">แก้ไขข้อมูล</button>
+          </div>
         </div>
       </div>
     </div>

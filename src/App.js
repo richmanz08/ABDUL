@@ -11,6 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Route path="/" component={Mainwebsite} />
         <Route path="/Mainwebsite" exact={true} component={Mainwebsite} />
         <Route path="/Loginpage" exact={true} component={Loginpage} />
         <Route
@@ -19,12 +20,7 @@ class App extends Component {
           component={LoginandRegister}
         />
         <Route path="/RegisterandLogin" component={RegisterandLogin} />
-        {/* <Route path="/Mainwebsite" exact={true} component={Mainwebsite} /> */}
-
-        <Route path="/PageDefault" component={Mainwebsite} />
-        <Route path="/profile" component={Mainwebsite} />
-        <Route path="/inventory" component={Mainwebsite} />
-        <Route path="/PostkratuManagement" component={Mainwebsite} />
+        {/* <Route path="/PageDefault" component={Mainwebsite} /> */}
       </div>
     );
   }

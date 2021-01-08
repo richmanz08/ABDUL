@@ -6,7 +6,7 @@ import Topper from "./Topper";
 function Loginpage() {
   return (
     <div className="Frame">
-      <Topper />
+      {/* <Topper /> */}
       <div className="Header">
         <div className="HeaderBox">
           <div className="txt-slogan">ทุกปัญหามีทางออก</div>

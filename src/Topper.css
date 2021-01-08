@@ -28,19 +28,19 @@
 
 .search-box {
   position: absolute;
-  background-color: #c5c8ca;
+  background-color: #a549fc;
   height: 20px;
   border-radius: 40px;
   padding: 10px;
   display: flex;
 }
 .box-btn {
-  color: #e84118;
+  color: #ffffff;
   float: right;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #c5c8ca;
+  background-color: #bb8dc9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@
   transition: 0.4s;
   line-height: 40px;
   width: 0px;
-  color: #333232;
+  color: #fff9f9;
   font-family: "Kanit";
 }
 .search-box:hover > .search-txt {

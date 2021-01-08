@@ -1,5 +1,5 @@
 .profileCTN {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #1d1d1d;
   display: flex;
@@ -183,7 +183,75 @@
   margin: 1rem;
   width: 700px;
   height: 500px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(50, 50, 50);
   color: #e4e6e5;
   font-size: 12px;
+  font-family: "Kanit";
+}
+.HeaderProfile-private {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  /* color: #ffffff; */
+}
+.Row-1-profile {
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  margin-top: 40px;
+}
+.Row-2-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.Row-3-profile {
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+}
+.Row-4-profile {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+.Row-5-profile {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.R-ITEMS-set {
+  margin-left: 60px;
+  font-size: 13px;
+}
+.set-box-R {
+  margin-left: 30px;
+  font-size: 15px;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 30px;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 0.5px solid rgb(50, 50, 50); */
+}
+.edit-box {
+  width: 100%;
+  /* height: 40px; */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 175px;
+}
+.btn-edit {
+  margin-right: 10px;
+  height: 30px;
+  font-family: "kanit";
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+}
+.btn-edit:active {
+  transform: scale(0.88);
 }

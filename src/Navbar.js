@@ -77,7 +77,7 @@ function Navbar() {
                 <input
                   type="text"
                   className="search-txt2"
-                  placeholder="ค้นหา"
+                  // placeholder="ค้นหา"
                 ></input>
                 <div className="box-btn2">
                   <img className="search-btn2" src="./search.png"></img>
