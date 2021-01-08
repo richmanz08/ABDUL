@@ -20,8 +20,6 @@ import "./inventory.css";
 //   }
 // }
 function Inventory() {
-  // const [sticker, setSticker] = useState(false);
-  // const showSticker = () => setSticker(!sticker);
   const [selectS, setSelect] = useState(false);
   const showSelect = () => setSelect(!selectS);
 
@@ -30,43 +28,64 @@ function Inventory() {
   return (
     <div className="inventoryCTN">
       <div className="InventoryBox">
-        <div className="Ctn-button-inventory">
-          <div
-            onClick={showSelect}
-            // onClick={showSelectP}
-            className="btn-sticker SandP-CSS"
-          >
-            <img
-              className="setpictureinventory"
-              src="./IMGinventory/sticker.png"
-            ></img>
-            Sticker
-          </div>
-          <div onClick={showSelectP} className="btn-portrait SandP-CSS">
-            <img
-              className="setpictureinventory"
-              src="./IMGinventory/portrait.png"
-            ></img>
-            Portrait
-          </div>
-        </div>
-        <div className="Present-container">
-          <div className="Present-items">
-            {/* /* //Sticker*/}
+        <div className="CONTAINER-IN">
+          <div className="Ctn-button-inventory">
             <div
-              className={selectS ? "StickerCss activeSticker" : "StickerCss "}
-              onClick={showSelectP}
-            >
-              <div className="StickerCtn">Sticker55</div>
-            </div>
-            {/* Portrait */}
-            <div
-              className={
-                selectP ? "PortraitCss activePortrait" : "PortraitCss "
-              }
               onClick={showSelect}
+              // onClick={showSelectP}
+              className="btn-sticker SandP-CSS"
             >
-              <div className="PortraitCtn">Portrait</div>
+              <img
+                className="setpictureinventory"
+                src="./IMGinventory/sticker.png"
+              ></img>
+              สติ้กเกอร์
+            </div>
+            <div className="Button-center-tab"></div>
+            <div onClick={showSelectP} className="btn-portrait SandP-CSS">
+              <img
+                className="setpictureinventory"
+                src="./IMGinventory/portrait.png"
+              ></img>
+              กรอบโปรไฟล์
+            </div>
+          </div>
+          <div className="TAB-InVENTOTY"></div>
+          <div className="Present-container">
+            <div className="Present-items">
+              {/* /* //Sticker*/}
+              <div
+                className={selectS ? "StickerCss activeSticker" : "StickerCss "}
+              >
+                <div className="StickerCtn">
+                  <div className="BOX-s">
+                    <div className="box-sticker-height">
+                      <div className="box-sticker-bg">
+                        <img
+                          className="setSticker-size"
+                          src="./IMGinventory/sticker1.png"
+                        ></img>
+                      </div>
+                    </div>
+                    <div className="list-items-sticker">
+                      <div className="name-sticker">ชื่อสติ้กเกอร์</div>
+                      <div className="name-sticker-n">น้องหมีตีพุง แบบที่1</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bar-sticker" onClick={showSelect}>
+                  <img className="setHand" src="./IMGinventory/hand.png"></img>
+                  ซ่อนหน้าต่างนี้
+                </div>
+              </div>
+              {/* Portrait */}
+              <div
+                className={
+                  selectP ? "PortraitCss activePortrait" : "PortraitCss "
+                }
+              >
+                <div className="PortraitCtn">Portrait</div>
+              </div>
             </div>
           </div>
         </div>

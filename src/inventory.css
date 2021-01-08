@@ -9,45 +9,52 @@
   margin-top: 20px;
   width: 1200px;
   height: 100vh;
-  background-color: #2424249c;
   display: flex;
   flex-direction: column;
+}
+
+.CONTAINER-IN {
+  width: 100%;
+  height: 900px;
 }
 .Ctn-button-inventory {
   width: 100%;
   display: flex;
-  background-color: #fcfafa;
+  background-color: #212121;
   height: 70px;
-  /* border: 1px solid; */
+  justify-content: center;
 }
 .SandP-CSS {
-  width: 150px;
+  width: 600px;
   font-family: "Kanit";
   font-weight: 600;
-  font-size: 15px;
+  font-size: 25px;
   cursor: pointer;
   outline: none;
   border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4e4e4;
+  letter-spacing: 5px;
 }
 .SandP-CSS:active {
   transform: scale(0.88);
 }
 .SandP-CSS:hover {
-  background-color: rgba(0, 235, 0, 0.822);
+  background-color: rgb(46, 46, 46);
 }
+
 .setpictureinventory {
+  margin-right: 10px;
   width: 50px;
-  animation: bounce 4s infinite;
 }
-@keyframes bounce {
-  10% {
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  /* 100% {
-    transform: translateY(20px);
-  } */
+
+.TAB-InVENTOTY {
+  margin-top: 2px;
+  width: 100%;
+  background-color: #302f2f;
+  height: 3px;
 }
 /*++++++++++++++++++ sticker+++++++++++++ */
 .Sticker-container {
@@ -58,15 +65,11 @@
   font-size: 50px;
   color: #e4e6e5;
 }
-.Present-container {
-}
+
 .Present-items {
   color: #0400fa;
-  width: 800px;
-  height: 600px;
-  /* background-color: rgba(180, 226, 27, 0.842); */
-  /* overflow: hidden;
-  position: relative; */
+  width: 1200px;
+  height: 800px;
   position: absolute;
   overflow: hidden;
 }
@@ -76,16 +79,13 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   top: -100%;
   transition: 850ms;
-  background-color: rgb(238, 136, 238);
-  /* z-index: 100; */
 }
 .StickerCss.activeSticker {
   top: 0px;
-  /* z-index: 50; */
   transition: 350ms;
-  /* right: 15px; */
 }
 .PortraitCss {
   position: absolute;
@@ -95,17 +95,103 @@
   justify-content: center;
   top: -100%;
   transition: 850ms;
-  /* z-index: 1; */
-  background-color: rgb(56, 15, 56);
-  /* z-index: 100; */
 }
 .PortraitCss.activePortrait {
   top: 0px;
   transition: 350ms;
-  /* right: 15px; */
-  /* z-index: 20; */
-  /* z-index: 50; */
 }
 .PortraitCtn {
-  /* background-color: #1d1d1d; */
+  width: 100%;
+  background-color: #f30202;
+}
+.StickerCtn {
+  width: 1200px;
+  height: 800px;
+  background-color: #2121210c;
+}
+.BOX-s {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 5px #302f2f solid;
+  box-sizing: 1px;
+  border-radius: 15px;
+  font-family: "Kanit";
+}
+.setSticker-size {
+  width: 80px;
+  height: 80px;
+  animation: bounce 5s infinite;
+}
+@keyframes bounce {
+  /* 10% {
+    transform: translateY(10px);
+  } */
+  50% {
+    transform: translateY(19px);
+  }
+  /* 75% {
+    transform: translateY(-15px);
+  } */
+}
+.box-sticker-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: #181617;
+  border-radius: 50%;
+}
+.list-items-sticker {
+  width: 185px;
+  /* border-radius: 30px; */
+  color: #e4e6e5;
+  background: rgba(59, 59, 59, 0.692);
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.name-sticker {
+  margin-top: 3px;
+  text-align: center;
+  font-size: 14px;
+}
+.name-sticker-n {
+  text-align: center;
+  font-size: 13px;
+  color: rgb(214, 107, 228);
+  margin-bottom: 3px;
+}
+.box-sticker-height {
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Button-center-tab {
+  width: 2px;
+  height: 100%;
+  background-color: rgb(46, 46, 46);
+}
+.bar-sticker {
+  color: #fbfbff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  font-family: "kanit";
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top right, #9261e7, #ec8ac8);
+}
+.setHand {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
