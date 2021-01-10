@@ -25,6 +25,63 @@ function Inventory() {
 
   const [selectP, setSelectP] = useState(false);
   const showSelectP = () => setSelectP(!selectP);
+
+  const StickerALL = [
+    {
+      sticker: (
+        <img
+          className="setSticker-size"
+          src="./IMGinventory/sticker1.png"
+        ></img>
+      ),
+      name: "น้องหมีนอนหลับ แบบที่1",
+    },
+    {
+      sticker: (
+        <img
+          className="setSticker-size"
+          src="./IMGinventory/sticker2.png"
+        ></img>
+      ),
+      name: "น้องหมีนอนหลับ แบบที่2",
+    },
+    {
+      sticker: (
+        <img
+          className="setSticker-size"
+          src="./IMGinventory/sticker3.png"
+        ></img>
+      ),
+      name: "น้องหมีนอนหลับ แบบที่3",
+    },
+    {
+      sticker: (
+        <img
+          className="setSticker-size"
+          src="./IMGinventory/sticker4.png"
+        ></img>
+      ),
+      name: "น้องหมีนอนหลับ แบบที่4",
+    },
+    {
+      sticker: (
+        <img
+          className="setSticker-size"
+          src="./IMGinventory/sticker5.png"
+        ></img>
+      ),
+      name: "น้องหมีนอนหลับ แบบที่5",
+    },
+    {
+      sticker: (
+        <img
+          className="setSticker-size"
+          src="./IMGinventory/sticker6.png"
+        ></img>
+      ),
+      name: "น้องหมีนอนหลับ แบบที่6",
+    },
+  ];
   return (
     <div className="inventoryCTN">
       <div className="InventoryBox">
@@ -58,19 +115,19 @@ function Inventory() {
                 className={selectS ? "StickerCss activeSticker" : "StickerCss "}
               >
                 <div className="StickerCtn">
-                  <div className="BOX-s">
-                    <div className="box-sticker-height">
-                      <div className="box-sticker-bg">
-                        <img
-                          className="setSticker-size"
-                          src="./IMGinventory/sticker1.png"
-                        ></img>
-                      </div>
-                    </div>
-                    <div className="list-items-sticker">
-                      <div className="name-sticker">ชื่อสติ้กเกอร์</div>
-                      <div className="name-sticker-n">น้องหมีตีพุง แบบที่1</div>
-                    </div>
+                  <div className="set-wrap">
+                    {StickerALL &&
+                      StickerALL.map((item, Index) => (
+                        <div className="BOX-s">
+                          <div className="box-sticker-height">
+                            <div className="box-sticker-bg">{item.sticker}</div>
+                          </div>
+                          <div className="list-items-sticker">
+                            <div className="name-sticker">ชื่อสติ้กเกอร์</div>
+                            <div className="name-sticker-n">{item.name}</div>
+                          </div>
+                        </div>
+                      ))}
                   </div>
                 </div>
                 <div className="bar-sticker" onClick={showSelect}>
@@ -84,7 +141,34 @@ function Inventory() {
                   selectP ? "PortraitCss activePortrait" : "PortraitCss "
                 }
               >
-                <div className="PortraitCtn">Portrait</div>
+                <div className="PortraitCtn">
+                  <div className="BOX-p">
+                    <div className="box-Portrait-height">
+                      <div className="box-Portrait-bg">
+                        <img
+                          className="setPortrait-size"
+                          src="./IMGinventory/stickser1.png"
+                          alt=""
+                        ></img>
+                      </div>
+                    </div>
+                    <div className="list-items-Portrait">
+                      <div className="name-Portrait">รูปแบบ</div>
+                      <div className="name-Portrait-n">สไตล์มินิมอล</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bar-Portrait" onClick={showSelectP}>
+                  <img className="setHand" src="./IMGinventory/hand.png"></img>
+                  ซ่อนหน้าต่างนี้
+                </div>
+              </div>
+              <div className="show-click-text">
+                <img
+                  className="Show-click-icon"
+                  src="./IMGinventory/show.png"
+                ></img>
+                คลิ้กที่ปุ่มด้านบนเพื่อแสดง สติ๊กเกอร์ หรือ กรอบโปรไฟล์
               </div>
             </div>
           </div>
