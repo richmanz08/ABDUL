@@ -22,11 +22,16 @@
 
 .navbarlogo {
   margin-left: 10px;
-  width: 100px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
+  animation: logo 5s infinite;
 }
-
+@keyframes logo {
+  50% {
+    transform: translatex(19px);
+  }
+}
 .butCss {
   font-size: 14px;
   /* width: 70px; */

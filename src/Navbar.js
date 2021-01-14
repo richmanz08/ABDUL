@@ -64,7 +64,7 @@ function Navbar() {
         </Link>
         <div className="Containernavbaritems">
           <div className="containnercenter">
-            <img className="navbarlogo" src="./logoabdul.png"></img>
+            <img className="navbarlogo" src="./logo-web.png"></img>
             <Link to="./PageDefault" style={{ textDecoration: "none" }}>
               <div className="mainpage butCss">หน้าหลัก</div>
             </Link>
