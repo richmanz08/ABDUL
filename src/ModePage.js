@@ -1,9 +1,15 @@
 import React,{useState} from "react";
 import "./ModePage.css";
-import Select from 'react-select'
+
 function ModePage() {
   const [sortS, setSorts] = useState(false);
   const showSorts = () => setSorts(!sortS);
+
+
+
+
+
+
   const listmodeitems = [
     {
       value: "กีฬา",
@@ -143,6 +149,46 @@ function ModePage() {
         
       
       <div className="heiden">
+             <div className="ImageSlideContainer">
+               <div className="content-one">
+                 <div className="itemONE-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/pubg.jpg"></img>
+                 </div>
+                 <div className="itemONE-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/pubg2.jpg"></img>
+                 </div>
+                 <div className="itemONE-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/pubg3.jpg"></img>
+                 </div>
+                
+               </div>
+               <div className="content-two">
+               <div className="itemTWO-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/f1.jpg"></img>
+                 </div>
+                 <div className="itemTWO-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/f2.jpg"></img>
+                 </div>
+                 <div className="itemTWO-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/f3.jpg"></img>
+                 </div>
+               </div>
+               <div className="content-three">
+               <div className="itemTHREE-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/fashion1.jpg"></img>
+                 </div>
+                 <div className="itemTHREE-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/fashion2.jpg"></img>
+                 </div>
+                 <div className="itemTHREE-slide">
+                   <img className="setImageAdd" src="./IMGmodepng/fashion3.jpg"></img>
+                 </div>
+               </div>
+             </div>
+
+
+
+
            <div 
                 className={sortS ? "SelectionCss activeSelection" : "SelectionCss "}
               >  
@@ -153,8 +199,9 @@ function ModePage() {
                         <div className="box-mode-text" onClick={showSorts}>
                         <div className="setsizeiconsmode">
                           {item.icons}</div>
-<div className="Name-mode-text">
-                          {item.value}</div>
+                        <div className="Name-mode-text">
+                          {item.value}
+                          </div>
                           
                         </div>
                         
@@ -164,6 +211,7 @@ function ModePage() {
                </div>
                </div>
                  </div>
+                 <div className="postshowlistfollowmode">55</div>
     </div>
     </div>
   );

@@ -4,11 +4,12 @@
     /* background-color: #1d1d1d; */
     display: flex;
     justify-content: center;
-    
+    /* flex-direction: column; */
 }
 .PageModeContent{
     width: 1200px;
     height: 100vh;
+    /* display: flex; */
     
 }
 .box-show-mode{
@@ -79,6 +80,10 @@
     margin-top: 10px;
     font-size: 20px;
 }
+.Select-Mode-Dropdown{
+    width: 100%;
+    height: 420px;
+}
 .SelectionCss{
     position: absolute;
     width: 100%;
@@ -104,13 +109,14 @@
     height: 350px;
     position: absolute;
     overflow: hidden;
-    background-color: rgb(203, 218, 202);
+    background-color: rgb(224, 210, 218);
 }
 .SelectionCtn{
-    width: 1200px;
+    width: 100%;
     height: 800px;
     background-color: #ffffff;
     /* border-radius: 10px; */
+   
     /* display: flex; */
 }
 .setsortIMG{
@@ -145,11 +151,13 @@
     height: 35px;
 }
 .set-wrap-selec{
+    /* border: 5px solid rgb(0, 0, 0); */
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     /* align-items: center; */
     justify-content: center;
+    /* height: 300px; */
 }
 .Box-Right{
      font-family: "kanit";
@@ -165,4 +173,136 @@
     margin-top: 20px;
     margin-left: 10px;
     font-size: 14px;
+}
+.ImageSlideContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-one{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    /* margin-right: 15px; */
+}
+.content-two{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    /* padding: 5px; */
+}
+.content-three{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(251, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+.itemONE-slide{
+    width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 31s infinite;
+}
+.itemONE-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .itemONE-slide:nth-child(2) {
+    animation-delay: 10s;
+  }
+  .itemONE-slide:nth-child(3) {
+    animation-delay: 20s;
+  }
+  
+  .itemONE-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @keyframes cycleImages {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+  }
+  .itemTWO-slide{
+    width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages2 31s infinite;
+}
+.itemTWO-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .itemTWO-slide:nth-child(2) {
+    animation-delay: 10s;
+  }
+  .itemTWO-slide:nth-child(3) {
+    animation-delay: 20s;
+  }
+  
+  .itemTWO-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @keyframes cycleImages2 {
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+.itemTHREE-slide{
+    width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages3 31s infinite;
+}
+.itemTHREE-slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .itemTHREE-slide:nth-child(2) {
+    animation-delay: 10s;
+  }
+  .itemTHREE-slide:nth-child(3) {
+    animation-delay: 20s;
+  }
+  
+  .itemTHREE-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @keyframes cycleImages3 {
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+.setImageAdd{
+    width: 100%;
+    height: 300px;
+}
+
+.postshowlistfollowmode{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
 }
