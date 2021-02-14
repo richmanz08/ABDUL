@@ -1,7 +1,6 @@
 .navbar {
   background-color: #212121;
   width: 100%;
-  /* width: 100vw; */
   height: 50px;
   display: flex;
   justify-content: start;
@@ -39,7 +38,7 @@
   justify-content: center;
   font-family: "kanit";
   margin: 0.3rem;
-  color: #aaa;
+  color: #e4e6e5;
   /* background-color: #e8eceb; */
   /* padding: 0.2rem; */
   border-radius: 10px;
@@ -48,7 +47,7 @@
 }
 .butCss:hover {
   /* background-color: #e09e50; */
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 .menu-bars {
   margin-top: 10px;
@@ -67,7 +66,7 @@
   /* background-color: #21212160; */
   background-color: #212121;
   width: 180px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   position: fixed;

@@ -57,7 +57,7 @@ function Navbar() {
       <div className="navbar">
         <Link to="#" className="menu-barsOne">
           <img
-            src="./menubar.png"
+            src="./navbaricon/menu.png"
             onClick={showSidebar}
             style={{ width: 20, height: 20 }}
           ></img>
@@ -68,8 +68,10 @@ function Navbar() {
             <Link to="./PageDefault" style={{ textDecoration: "none" }}>
               <div className="mainpage butCss">หน้าหลัก</div>
             </Link>
+            
             <div className="shop butCss">ร้านค้า</div>
-            <div className="mode butCss">หมวดหมู่</div>
+            <Link to="./ModePage" style={{textDecoration:"none"}}>
+            <div className="mode butCss">หมวดหมู่</div></Link>
             <div className="create butCss">สร้างกระทู้</div>
 
             <div className="searchbar2">
@@ -91,7 +93,7 @@ function Navbar() {
             <div>
               <img
                 className="icon-button"
-                src="./usericon.png"
+                src="./navbaricon/user.png"
                 onClick={showDropdown}
               ></img>
             </div>
