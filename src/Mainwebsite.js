@@ -7,6 +7,8 @@ import PostkratuManagement from "./PostkratuManagement";
 import PageDefault from "./PageDefault";
 import "./Mainwebsite.css"
 import ModePage from "./ModePage";
+import CreateScreens from "./CreateScreens";
+import ShopScreen from "./ShopScreen";
 function Mainwebsite() {
   return (
     
@@ -18,6 +20,8 @@ function Mainwebsite() {
           <Route path="/Mainwebsite" exact={true} component={PageDefault} />
           <Route path="/PageDefault" exact={true} component={PageDefault} />
           <Route path="/Modepage" exact={true} component={ModePage} />
+          <Route path="/CreateScreens" exact={true} component={CreateScreens} />
+          <Route path="/ShopScreen" exact={true} component={ShopScreen} />
           <Route path="/profile" exact={true} component={profile} />
           <Route path="/Inventory" exact={true} component={Inventory} />
           <Route

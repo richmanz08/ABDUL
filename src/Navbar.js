@@ -10,33 +10,34 @@ function Navbar() {
     {
       title: " โปรไฟล์",
       path: "/profile",
-      icons: <img className="allpicturesidebar" src="/Profile.png"></img>,
+      icons: <img className="allpicturesidebar" src="./IMGnavbar/1.png"></img>,
     },
     {
       title: "กระเป๋า",
       path: "/inventory",
       icons: (
-        <img className="allpicturesidebar" src="/icons8-backpack-50.png"></img>
+        <img className="allpicturesidebar" src="./IMGnavbar/2.png"></img>
       ),
     },
     {
       title: "จัดการกระทู้",
       path: "/PostkratuManagement",
-      icons: <img className="allpicturesidebar" src="/Gear.png"></img>,
+      icons: <img className="allpicturesidebar" src="./IMGnavbar/3.png"></img>,
     },
-    // {
-    //   title: " Home",
-    //   path: "/",
-    //   icons: <img src="/homemenu.png"></img>,
-    //   className: "nav-text",
-    // },
+    {
+      title: "สร้างกระทู้",
+      path: "/CreateScreens",
+      icons: <img  className="allpicturesidebar" src="./IMGnavbar/4.png"></img>,
+      
+    },
+   
   ];
   const [userDropdown, setDropdown] = useState(false);
   const showDropdown = () => setDropdown(!userDropdown);
   const DropdownUser = [
     {
       title: "โปรไฟล์",
-      icons: <img className="icons-userMENU" src="./usericon.png"></img>,
+      icons: <img className="icons-userMENU" src="./Profile.png"></img>,
     },
     {
       title: "เปลี่ยนรหัสผ่าน",
@@ -68,11 +69,14 @@ function Navbar() {
             <Link to="./PageDefault" style={{ textDecoration: "none" }}>
               <div className="mainpage butCss">หน้าหลัก</div>
             </Link>
-            
-            <div className="shop butCss">ร้านค้า</div>
-            <Link to="./ModePage" style={{textDecoration:"none"}}>
-            <div className="mode butCss">หมวดหมู่</div></Link>
-            <div className="create butCss">สร้างกระทู้</div>
+             <Link to="./ShopScreen">
+            <div className="shop butCss">ร้านค้า</div></Link>
+            <Link to="./ModePage" style={{ textDecoration: "none" }}>
+              <div className="mode butCss">หมวดหมู่</div>
+            </Link>
+            <Link to="./CreateScreens">
+              <div className="create butCss">สร้างกระทู้</div>
+            </Link>
 
             <div className="searchbar2">
               <div className="search-box2">
@@ -101,11 +105,14 @@ function Navbar() {
           <nav
             className={
               userDropdown ? "dropdown-user activeDropdown" : "dropdown-user "
-            }
+            }onClick={showDropdown}
           >
-            <div className="dropdown-menu-items" onClick={showDropdown}>
+
+           
+            <div className="dropdown-menu-items" >
               {DropdownUser.map((item, index) => {
                 return (
+                  <div className="width-dditems">
                   <div key={index} className={item.className}>
                     <Link to={item.path} style={{ textDecoration: "none" }}>
                       <div className="DDitems">
@@ -113,10 +120,11 @@ function Navbar() {
                         <div className="fonttitleDD">{item.title}</div>
                       </div>
                     </Link>
-                  </div>
+                  </div></div>
                 );
               })}
-            </div>
+              
+            </div><text className="text-florr-userdropdown">ความเป็นส่วนตัว : กรุณาล็อคเอ้าทุกครั้งหลังเสร็จสิ้นการใช้งาน เพื่อความปลอดภัย</text>
           </nav>
         </div>
       </div>
@@ -129,14 +137,14 @@ function Navbar() {
               className="menu-bars"
               style={{ textDecoration: "none" }}
             >
-              X ปิดหน้าต่าง
-              {/* <img className="settingClosePNG" src="./close.png"></img> */}
+              Close Left bar
+              
             </Link>
           </div>
           <div className="space"></div>
           <div className="UserprofileContainer">
             <div className="TemplateUserImage C">
-              <img className="userImage" src="non.jpg"></img>
+              <img className="userImage" src="./unnamed.png"></img>
             </div>
             <div className="UserName-T">Richmanz08</div>
             <div className="space"></div>
@@ -155,6 +163,15 @@ function Navbar() {
               );
             })}
           </div>
+          <div className="box-button-sidebar">
+            
+          </div>
+          <div className="text-show-box">
+            <button className="Set-account">ตั้งค่าบัญชีผู้ใช้</button>
+            <button className="Logout-button">ออกจากระบบ</button>
+            <text>Tel.0984437173 24hr.</text>
+            <text>@ Kasetsart university</text>
+             </div>
         </div>
       </nav>
     </div>
