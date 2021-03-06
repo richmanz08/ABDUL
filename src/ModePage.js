@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import "./ModePage.css";
-
-function ModePage() {
+import { Link } from "react-router-dom";
+import {useHistory} from 'react-router-dom';
+function ModePage(props) {
+  const [idd,setidd] = useState('')
+const[passID,SetpassID] = useState(idd);
+const history =useHistory()
+const routeChange = () =>{ 
+    let path = `Showkratu`; 
+    history.push(path);
+  }
   const [sortS, setSorts] = useState(false);
   const showSorts = () => setSorts(!sortS);
   // extension in a user
@@ -9,10 +17,10 @@ function ModePage() {
   const [extension, SetEX] = useState(false);
   const showExtension = (data) => {
     SetEX(!extension);
-    setSelected(data)
-  }
-const[indexA,setIndexA] = useState('');
-const setindex = ()=>indexA(!extension);
+    setSelected(data);
+  };
+  const [indexA, setIndexA] = useState("");
+  const setindex = () => indexA(!extension);
   const listmodeitems = [
     {
       value: "กีฬา",
@@ -144,14 +152,9 @@ const setindex = ()=>indexA(!extension);
     },
   ];
   const datagame = [
-    { id:1,
-      
-      picture: (
-        <img className="sizepictureset" src="./IMGmodepng/dota2.jpg"></img>
-      ),
-      
-      
-
+    {
+      id: 14477,
+      picture: (<img className="sizepictureset" src="./IMGmodepng/dota2.jpg"></img>),
       Topic:
         "Dota 2 ขึ้นแท่นเกมที่มีผู้ชมเฝ้าติดตามอย่างเหนียวแน่นที่สุดในด้าน Esports Hoodwink ฮีโร่ลำดับที่ 120 ของ Dota 2 ได้อัปเดตเข้าสู่เกมแล้ว พร้อมแพทช์ 7.28 Mistwoods พร้อมการเปลี่ยนแปลงมากมายในเกม โดยคาดว่าจะเป็น Hero เพียงคนเดียวที่จะเข้าเกมในปีนี้",
       like: "20",
@@ -162,8 +165,9 @@ const setindex = ()=>indexA(!extension);
       day: "10/20/11",
       comment: "51",
     },
-    { id:2,
-      
+    {
+      id: 21145,
+
       picture: (
         <img className="sizepictureset" src="./IMGmodepng/pubg2.jpg"></img>
       ),
@@ -175,8 +179,9 @@ const setindex = ()=>indexA(!extension);
       comment: "30",
       like: "1211",
     },
-    { id:3,
-      
+    {
+      id: 32211,
+
       picture: (
         <img className="sizepictureset" src="./IMGmodepng/pubg3.jpg"></img>
       ),
@@ -213,6 +218,7 @@ const setindex = ()=>indexA(!extension);
               ทั้งยังเป็นความสดใหม่ของโลกเกมเมอร์ที่แม้แต่ผ่านมา 2
               ปีแล้วเกมแนวนี้ก็ยังได้รับการยอมรับอยู่และยังคงมีจำนวนผู้เล่นที่เข้ามาสู่เกมแนวนี้อย่างสม่ำเสมอ
             </div>
+            
           </div>
         </div>
         <div className="Select-Mode-Dropdown">
@@ -222,61 +228,6 @@ const setindex = ()=>indexA(!extension);
           </div>
 
           <div className="heiden">
-            <div className="ImageSlideContainer">
-              <div className="content-one">
-                <div className="itemONE-slide">
-                  <img
-                    className="setImageAdd"
-                    src="./IMGmodepng/pubg.jpg"
-                  ></img>
-                </div>
-                <div className="itemONE-slide">
-                  <img
-                    className="setImageAdd"
-                    src="./IMGmodepng/pubg2.jpg"
-                  ></img>
-                </div>
-                <div className="itemONE-slide">
-                  <img
-                    className="setImageAdd"
-                    src="./IMGmodepng/pubg3.jpg"
-                  ></img>
-                </div>
-              </div>
-              <div className="content-two">
-                <div className="itemTWO-slide">
-                  <img className="setImageAdd" src="./IMGmodepng/f1.jpg"></img>
-                </div>
-                /{" "}
-                <div className="itemTWO-slide">
-                  <img className="setImageAdd" src="./IMGmodepng/f2.jpg"></img>
-                </div>
-                <div className="itemTWO-slide">
-                  <img className="setImageAdd" src="./IMGmodepng/f3.jpg"></img>
-                </div>
-              </div>
-              <div className="content-three">
-                <div className="itemTHREE-slide">
-                  <img
-                    className="setImageAdd"
-                    src="./IMGmodepng/fashion1.jpg"
-                  ></img>
-                </div>
-                <div className="itemTHREE-slide">
-                  <img
-                    className="setImageAdd"
-                    src="./IMGmodepng/fashion2.jpg"
-                  ></img>
-                </div>
-                <div className="itemTHREE-slide">
-                  <img
-                    className="setImageAdd"
-                    src="./IMGmodepng/fashion3.jpg"
-                  ></img>
-                </div>
-              </div>
-            </div>
-
             <div
               className={
                 sortS ? "SelectionCss activeSelection" : "SelectionCss "
@@ -302,41 +253,10 @@ const setindex = ()=>indexA(!extension);
           {/* map */}
           {datagame &&
             datagame.map((item, index) => (
-              
-              <div className="itemlistAll-container">
-                <div className="zonepicture">
-                  {item.picture}
-                  {/* <img className="sizepictures444et" src="./IMGmodepng/dota2.jpg"></img> */}
-                </div>
+              <div className="itemlistAll-container" idd={item.id}    onClick={()=>routeChange(passID)} >
+                <div className="zonepicture" >{item.picture}</div>
                 <div className="zonecontent">
-                  <div className="Text-content">{item.Topic} </div>
-                  <div className="whoareyou">
-                   <div onClick={() => {
-                     showExtension(index);
-                   } }>{item.profile}</div>
-                 <div  className={extension && selected === index?  "extension-container activeextension ":"extension-container"  }>
-                    <div onClick={showExtension}>ดูนามบัตร</div>
-                    <div onClick={showExtension}>รายงานความไม่เหมาะสม</div>
-                 </div>
-                    {/* <img className="picture-progile" src="non.jpg"></img> */}
-                    <div className="nameuser-profilt">{item.name}</div>
-                    <div>12/02/2556</div>
-                    <div className="likeandchat-container">
-                      <img
-                        className="setsize-likeandchat"
-                        src="./IMGmodepng/like.png"
-                      ></img>
-                      <div className="setmargin1">{item.like}</div>
-                      <img
-                        className="setsize-likeandchat"
-                        src="./IMGmodepng/chat.png"
-                      ></img>
-                      <div className="setmargin2">{item.comment}</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="Show-more-Modepage">
-                  <img className="setsize-smm" src="./IMGmodepng/eye.png"></img>
+                  <div className="Text-content">{item.Topic}</div>
                 </div>
               </div>
             ))}

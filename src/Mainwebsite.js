@@ -9,6 +9,7 @@ import "./Mainwebsite.css"
 import ModePage from "./ModePage";
 import CreateScreens from "./CreateScreens";
 import ShopScreen from "./ShopScreen";
+import ShowKratuScreen from "./ShowKratuScreen";
 function Mainwebsite() {
   return (
     
@@ -29,6 +30,7 @@ function Mainwebsite() {
             exact={true}
             component={PostkratuManagement}
           />
+          <Route path="/Showkratu" exact={true} component={ShowKratuScreen}/>
         </Switch>
       </Router>
       

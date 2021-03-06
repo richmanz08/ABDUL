@@ -182,7 +182,9 @@ function CreateScreens() {
                   style={{ padding: 10, fontFamily: "kanit" }}
                   size="small"
                   placeholder="บอกให้ผู้คนรับรู้ถึงเรื่องที่คุณอยากจะบอก"
+                  maxlength="150"
                 />
+                <text className="h4set">จัดกัดอยู่ที่ 150 ตัวอักษร</text>
               </div>
             </div>
           </div>
@@ -197,7 +199,8 @@ function CreateScreens() {
                 rows={4}
                 style={{ marginBottom: 2 }}
                 size="large"
-                placeholder="พิมพ์เนื้อหาของคุณตรงนี้"
+                placeholder="พิมพ์เนื้อหาของคุณตรงนี้ ความยาวเนื้อหาของท่านต้องไม่เกิน 1500 ตัวอักษร"
+                maxlength="1500"
               />
             </div><button className="Style-button-accept" onClick={() => openNotificationWithIcon('success')}>ตกลง</button>
           </div> 

@@ -1,7 +1,7 @@
 .BACK-BODY-CONTAINER {
   width: 100%;
   /* height: 100vh; */
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
   display: flex;
   justify-content: center;
 }
@@ -23,7 +23,7 @@
   margin-top: 10px;
   width: 100%;
   height: 55px;
-  background-color: #212121;
+  background-color: #8ba088;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,277 +37,73 @@
 .btn-create-new:hover {
   background-color: rgb(46, 46, 46);
 }
-.Box-Lastpost {
-  margin-top: 30px;
-  width: 100%;
-  height: 495px;
-  /* margin-bottom: 20px; */
-  /* background-color: #302f2f; */
-}
-.txt-lastpost-hd {
-  color: #e4e6e5;
-  font-size: 20px;
-}
-.setFlexbox {
-  display: flex;
-  /* flex-direction: column; */
-}
-.picture-post {
-  width: 450px;
-  height: 400px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.text-post-box {
-  width: 750px;
-  height: 400px;
-  /* background-color: #ffffff; */
-}
-.setsize-pp {
-  width: 90%;
-  height: 90%;
-}
-.descriptionbox {
-  width: 100%;
-  height: 200px;
-  /* background-color: #2d2d2d; */
-}
-.icons-create {
-  width: 25px;
-  margin-right: 10px;
-}
-.icons-repair {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-.icons-repair:active {
-  transform: scale(0.85);
-}
-.zone-Top {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  font-family: "kanit";
-  align-items: center;
-  /* justify-content: center; */
-}
-.name-post {
-  width: 95%;
-  color: #fff;
-}
-.picture-my-post {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  /* border: 5px solid ; */
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.mode-set {
-  display: flex;
-  /* background-color: #1d1d1d; */
-  margin-left: 65px;
-}
-.setCSS-mode-inpost {
-  width: 60px;
-  font-family: "kanit";
-  font-size: 12px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(252, 252, 252, 0);
-  color: rgb(214, 107, 228);
-  border: 2px solid;
-  margin: 2px;
-  cursor: pointer;
-  outline: none;
-}
-.text-items {
-  padding: 1rem;
-  color: #fff;
-  /* background-color: #fff; */
-}
-.line-row {
-  width: 45%;
-  height: 1px;
-  background-color: #d3d3d3;
-}
-.row-tab-message {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  color: #d3d3d3;
-  justify-content: center;
-}
-.Message-m {
-  font-size: 11px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-.zone-like-ment {
-  width: 100%;
-  /* height: 50px; */
-  margin-top: 50px;
-  display: flex;
-  justify-content: flex-end;
-  color: #fff;
-}
-.comment-box {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.cssSetlike-comment {
-  font-size: 12px;
-  /* width: 1px; */
-  padding: 10px;
-  /* height: 50px; */
-  background-color: #b883e9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.cssSetlike-comment:active {
-  transform: scale(0.9);
-}
-.Modal-like {
-  width: 350px;
-  height: 90vh;
-  z-index: 99;
-  display: flex;
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  right: -100%;
-  top: 0%;
-  position: fixed;
-  transition: 850ms;
-  color: #000;
-}
-.Modal-like.activelikemodal {
-  right: 1%;
-  top: 5%;
-  transition: 350ms;
-}
-.Modal-Comment {
-  width: 350px;
-  height: 90vh;
-  z-index: 99;
-  display: flex;
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  right: -100%;
-  top: 0%;
-  position: fixed;
-  transition: 850ms;
-  color: #000;
-}
-.Modal-Comment.activeCommentmodal {
-  right: 1%;
-  top: 5%;
-  transition: 350ms;
-}
-.ALLPOST-CONTAINER{
-  margin-top: 10px;
-  width: 100%;
-  background-color: rgb(44, 44, 44);
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.itemAllPost-area{
 
-  width: 99%;
-  margin: 5px;
-  height: 180px;
-  background-color: rgb(32, 32, 32);
-  display: flex;
-  align-items: center;
+.items-Image{
+width: 200px;
+height: 120px;
 }
 .img-post{
-  width: 250px;
-  /* height: 200px; */
+  width: 100%;
+  height: 100%;
 }
-.text-post{
-  font-family: "kanit";
-  font-size: 15px;
-  color: #e4e6e5;
-  /* width: 73%; */
-  height: 135px;
-  /* background-color: seagreen; */
+.Boxitem{
+  padding: 10px;
+  border-radius: 5px;
+  width: 500px;
+  /* height: ; */
+  margin: 20px;
+  /* background-color: #56e42b; */
+  box-shadow: 0 5px 25px 0  #585858;
 }
-.Show-more{
-  display: flex;
-  flex-direction: column;
-  width: 45px;
-  height: 95%;
-  background-color: rgb(44, 44, 44);
-   align-items: center;
-   align-content: center;
-   justify-content: center;
-   margin-left: 10px;
-   margin-right: 5px;
-   cursor: pointer;
+.container-Boxitem{
+ width: 100%;
+ padding: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ /* height: fit-content; */
+
+
 }
-.Show-more:hover{
-  background-color:#b883e9;
-}
-.Show-more:active{
-  transform: scale(0.95);
-}
-.setshowmore{
-  width: 25px;
-}
-.zone-textandtool{
-  width: 73%;
-    display: flex;
-  flex-direction: column;
-}
-.tool-container{
-  display: flex;
-  justify-content: flex-end;
-}
-.set-button-TT{
-  width: 20px;
-  /* margin-right:10px ; */
-}
-.setButtonTT{
-  background-color: rgb(44, 44, 44);
+
+
+
+.Button-delete{
+  width: 100px;
   outline: none;
+  background-color: #FF0066	;
   border: none;
-  font-family: "kanit";
-  border-radius: 50%;
-  /* background: none; */
-  width: 30px;
-  height: 30px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+.row4{
+  display: flex;
+  align-items: flex-end;
+}
+.items-date
+{ font-size: 12px;
+  width: 80%;
+  color: #32CD32;
+}
+.row1{
+  display:flex ;
+}
+.items-mode
+
+{ position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 70px;
+  height: 70px;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  margin-right: 5px;
-}
-.setButtonTT:active{
-  transform: scale(0.95);
-  
-}
-.zone-DateandMode{
-  width: 100px;
-  height: 100%;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
-  /* background-color: seagreen; */
-}
-.set-date-style{
-  color: #80d86a;
-  margin-top: 9px;
+  background:linear-gradient(to bottom,rgb(211, 223, 48),rgb(221, 105, 59));
+  border-radius: 50%;
+  box-shadow: 0 5px 25px 0  #585858;
+  color: #fff;
+  /* width: 80%; */
+  /* color: #32CD32; */
 }

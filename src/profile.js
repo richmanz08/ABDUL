@@ -4,7 +4,6 @@ import { Tabs ,Input} from 'antd';
 
 
 
-
 function profile() {
   const { TabPane } = Tabs;
   const { TextArea } = Input;
@@ -67,6 +66,9 @@ function callback(key) {
           placeholder="ไม่มี"
           autoSize={{ minRows: 2, maxRows: 6 }}
         />
+
+        แก้ไขรูปโปรไฟล์
+        <div></div>
      <div > 
      
      </div>
