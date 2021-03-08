@@ -56,26 +56,45 @@ height: 120px;
   box-shadow: 0 5px 25px 0  #585858;
 }
 .container-Boxitem{
+
+  margin-top: 30px;
  width: 100%;
- padding: 20px;
+ /* background-color: aquamarine; */
+ /* padding: 20px; */
+ /* justify-content: center; */
  display: flex;
  flex-wrap: wrap;
  /* height: fit-content; */
+padding-left: 60px;
+
+}
+.header-text{
+  width: 350px;
+  margin-top: 10px;
 
 
+  /* background-color: #ffffff; */
+  font-size: 25px;
+  color:#8ba088;
 }
 
 
-
 .Button-delete{
-  width: 100px;
+  width: 40px;
   outline: none;
-  background-color: #FF0066	;
+  background-color: #f1eff0	;
   border: none;
   cursor: pointer;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 50%;
+
   
+}
+.Button-delete:hover{
+  background-color: #e2e0e0	;
+}
+.Button-delete:active{
+  transform: scale(0.95);
 }
 .row4{
   display: flex;
@@ -83,10 +102,10 @@ height: 120px;
 }
 .items-date
 { font-size: 12px;
-  width: 80%;
+  width: 90%;
   color: #32CD32;
 }
-.row1{
+.row1-bloglist{
   display:flex ;
 }
 .items-mode
@@ -106,4 +125,23 @@ height: 120px;
   color: #fff;
   /* width: 80%; */
   /* color: #32CD32; */
+}
+.items-TOPIC{
+  margin-top: 10px;
+  height:100px;
+  color: #333;
+}
+.View-post-button{
+  width: 30px;
+  height: 30px;
+}
+.View-button{
+  background-color: #212121;
+  outline: none;
+  border:none;
+  width: 100px;
+  height: 30px;
+  margin-left: 175px;
+  color: #fff;
+  cursor:pointer;
 }

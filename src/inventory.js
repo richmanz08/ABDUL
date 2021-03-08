@@ -20,11 +20,16 @@ import "./inventory.css";
 //   }
 // }
 function Inventory() {
-  const [selectS, setSelect] = useState(false);
-  const showSelect = () => setSelect(!selectS);
+  const [selectS, setSelect] = useState(true);
+  const showSelect = () => {setSelect(!selectS)
+   setSelectP(false)
+  
+  };
 
   const [selectP, setSelectP] = useState(false);
-  const showSelectP = () => setSelectP(!selectP);
+  const showSelectP = () => {setSelectP(!selectP);
+  setSelect(false)
+  }
 
   const StickerALL = [
     {

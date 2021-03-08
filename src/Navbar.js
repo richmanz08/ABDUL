@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PageDefault from "./PageDefault";
 import "./Navbar.css";
-
+import HOME from "./HOME";
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
@@ -47,7 +47,7 @@ function Navbar() {
       title: "สลับบัญชีผู้ใช้",
       icons: <img className="icons-userMENU" src="./Switchaccount.png"></img>,
     },
-    {
+    { path:"./",
       title: "ออกจากระบบ",
       icons: <img className="icons-userMENU" src="./Logout.png"></img>,
     },
@@ -142,13 +142,16 @@ function Navbar() {
             </Link>
           </div>
           <div className="space"></div>
-          <div className="UserprofileContainer">
+          {/* <div className="UserprofileContainer">
             <div className="TemplateUserImage C">
               <img className="userImage" src="./unnamed.png"></img>
             </div>
             <div className="UserName-T">Richmanz08</div>
             <div className="space"></div>
-          </div>
+          </div> */}
+
+
+          
           <div className="ContainerItemsidebar">
             {SidebarData.map((item, index) => {
               return (
@@ -168,7 +171,9 @@ function Navbar() {
           </div>
           <div className="text-show-box">
             <button className="Set-account">ตั้งค่าบัญชีผู้ใช้</button>
+           
             <button className="Logout-button">ออกจากระบบ</button>
+            
             <text>Tel.0984437173 24hr.</text>
             <text>@ Kasetsart university</text>
              </div>
