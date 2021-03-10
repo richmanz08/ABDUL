@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+import ADMIN from "./ADMIN";
 import HOME from "./HOME";
 import Mainwebsite from "./Mainwebsite";
 import ModePage from "./ModePage";
@@ -27,6 +28,7 @@ class App extends Component {
             component={Mainwebsite}
           />
           <Route path="/Showkratu" exact={true} component={Mainwebsite}/>
+          <Route path="/ADMIN"   exact={true} component={ADMIN}   />
       </Route>
     );
   }

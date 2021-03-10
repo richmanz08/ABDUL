@@ -1,0 +1,157 @@
+.Layout-admin{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+}
+.BarItem{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+}
+.t-addmin{
+    color: #fff;
+    display: flex;
+    width: 250px;
+    font-family: 'kanit';
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+.icons-logo-add{
+    /* width: 100px; */
+    animation: logo1 5s infinite;
+}
+@keyframes logo1 {
+    50% {
+      transform: translatex(19px);
+    }
+  }
+  .setBstyle{
+      cursor: pointer;
+  }
+  .Body-Dashbord{
+      width: 100%;
+      padding-left: 100px;
+      padding-top: 100px;
+      /* background-color: rgb(255, 255, 255); */
+      /* height: 500px; */
+   
+  }
+  .dashbordDisplay{
+      display: none;
+      
+  }
+
+  .Body-Management{
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 100px;
+    /* background-color: rgb(235, 91, 91); */
+    /* height: 500px; */
+   
+}
+.managementDisplay{
+    display: none;
+}
+
+.Body-Request{
+    width: 100%;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 100px;
+    /* justify-content: center; */
+    /* background-color: rgb(42, 124, 56);s */
+    /* height: 500px; */
+
+   
+}
+.requestDisplay{
+    display: none;
+}
+.Body-SandP{
+    width: 100%;
+    /* background-color: rgb(42, 124, 56); */
+    height: 500px;
+   
+}
+.SandPDisplay{
+    display: none;
+}
+.dashbordCSS{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: 'kanit';
+}
+.table-css{
+    margin-left: 60px;
+    display: flex;
+    border: 1px solid ;
+    width: 600px;
+    background-color: yellow;
+    align-items: center;
+}
+.header-username{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.header-password{
+    margin-left: 120px;
+    font-size: 20px;
+}
+.header-delete{
+    font-size: 20px;
+    margin-left: 120px;
+}
+.itemusername{
+    margin-left: 60px;
+    width: 190px;
+    display: flex;
+    /* background-color: teal; */
+    /* flex-direction: row; */
+}
+.itempassword{
+    margin-left: 40px;
+    width: 190px;
+    display: flex;
+    /* background-color: rgb(58, 128, 0); */
+    /* flex-direction: row; */
+}
+.itemdelete{
+    margin-left: 40px;
+    width: 100px;
+    color: tomato;
+    cursor: pointer;
+    /* display: flex; */
+
+    /* background-color: rgb(58, 128, 0); */
+    /* flex-direction: row; */
+}
+.rowtable{
+    margin-top: 10px;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.setBoxrequest{
+    display: flex;
+    flex-direction: column;
+    /* margin: 50px; */
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Checkshowcontainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+}
+.displayCheckshow{
+    display: none;
+}

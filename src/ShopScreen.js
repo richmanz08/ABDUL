@@ -8,7 +8,7 @@ import {
   WindowsOutlined,
   ProfileOutlined,
 } from "@ant-design/icons";
-import { iconsuse } from "./assets/close.png";
+
 
 function ShopScreen() {
   const { TabPane } = Tabs;
