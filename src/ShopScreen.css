@@ -226,3 +226,27 @@ border-radius: 10px;
 .header-all-list-txt{
     font-family: 'kanit';
 }
+.Messagefinish{
+    
+    font-size: 50px;
+}
+.displaymessagefinish{
+    display: none;
+}
+.finishtext{
+    font-family: 'kanit';
+    font-size: 20px;
+    color: #006600;
+}
+.Messagefail{
+    color: #e4321b;
+    font-size: 50px;
+}
+.displaymessagefail{
+    display: none;
+}
+.failtext{
+    font-family: 'kanit';
+    font-size: 20px;
+    
+}
