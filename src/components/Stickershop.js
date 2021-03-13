@@ -84,29 +84,28 @@ function Stickershop() {
   
       const[sumsticker,setSticker] = useState(StickerALL.length)
      const[price,Setprice] = useState('')
-     const [idSTK,SetStkid] = useState([])
+     const [idSTK,SetStkid] = useState('')
      const[A,setA] = useState()
-     const[starUs,setUs] = useState('5')
+     const[starUs,setUs] = useState('20')
+     const [eventBuy,SetEven] = useState()
      const Paypal =(e) => {
        
-       Setprice(e.price)
-       functionCheckSTk()
-       SetStkid(e.id)
-     }  
-      const functionCheckSTk =() => {
+       Setprice(e.price);
+       SetStkid(e.id);
 
-           if(idSTK==112 || idSTK==113){
+        let DataM  ;
+             DataM = 112;
+           if(idSTK == DataM ){
               return showMessagefail()
            }
            else {
              return showMessage()
            }
           
-          }
-      const clearbill = () =>{
-        
-        showMessage()
-      } 
+       
+     }  
+     
+      
     const[VisebilityMessage,SetErr] = useState(false)
     const showMessage = () => {
       SetErr(true)
@@ -207,7 +206,7 @@ function Stickershop() {
                         <div className={VisebilityMessagefail?"Messagefail":"displaymessagefail"}>
                        <div className="failtext">คุณมีสติ้กเกอร์นี้เเล้ว</div> 
                         </div>
-                  <button className="butten-accept-trade"  onClick={()=>Paypal(item)} >แลกเปลี่ยน</button></div>
+                  <button className="butten-accept-trade"  onClickCapture={()=>Paypal(item)} >แลกเปลี่ยน</button></div>
                   
                 </div>
               ))}

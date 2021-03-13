@@ -3,8 +3,12 @@ import ModePage from "./ModePage";
 import "./ShowKratu.css";
 import { Input } from "antd";
 import { Button, notification, Space } from 'antd';
-function ShowKratuScreen({ passID }) {
-  
+function ShowKratuScreen({ item }) {
+  const maxindex = () => {
+    setEnd(end + 2);
+  };
+  const [start, setStart] = useState("0");
+  const [end, setEnd] = useState(4);
   const openNotificationWithIcon1 = type => {
     notification[type]({
       message: <div style={{fontFamily:'kanit'}}>กดให้ดาวเรียบร้อย</div>,
@@ -60,7 +64,7 @@ const mixfunction2 =() =>{
     Setsticker(false);
   };
 
-  const [id, saveID] = useState(passID);
+  const [newTerm, SetTerm] = useState({item});
   const DATATABLEkt = [
     { id: 14477, title: "ข้อมูลชุดที่ 1" },
     { id: 21145, title: "ข้อมูลชุดที่ 2" },
@@ -155,12 +159,26 @@ const mixfunction2 =() =>{
       commentSum: 60,
     },
   ];
-
+  const TableRow = ({ data }) => (
+    <div className="GroupBox-cc">
+                   
+                    <div className="itemCCZ">
+                      {data.comment}
+                      <div className="setStcikerCC">{data.sticker}</div>
+                    </div>
+                    <div className="Whoisthis">
+                      <div className="setitemprofile">
+                        {data.profilepicture}
+                      </div>
+                      {data.name}
+                    </div>
+                  </div>
+  );
   return (
     <div className="Layout">
       <div className="Content-align">
         <div className="BacktopBG-container">
-          <img className="SetBGWHITE" src="./IMGshow/bg2.jpeg"></img>
+          <img className="SetBGWHITE" src="./IMGshow/studybg.jpeg"></img>
         </div>
         {TablePost &&
           TablePost.map((item, index) => (
@@ -172,6 +190,7 @@ const mixfunction2 =() =>{
                   </div>
                 </div>
                 <div className="Right-pic-controll">
+                  <div>{newTerm.picture}</div>
                   <text className="S-topic">ผู้โพสต์</text>
                   <text className="S-set">{item.name}</text>
                   <text className="S-topic">วันที่โพสต์</text>
@@ -209,22 +228,15 @@ const mixfunction2 =() =>{
               รายการแสดงความคิดเห็นทั้งหมด
             </text>
             <div className="Box-comment-list">
-              {commentlistAll &&
-                commentlistAll.map((item, index) => (
-                  <div className="GroupBox-cc">
-                    <div className="ttthink">ความคิดเห็นที่ {index + 1}</div>
-                    <div className="itemCCZ">
-                      {item.comment}
-                      <div className="setStcikerCC">{item.sticker}</div>
-                    </div>
-                    <div className="Whoisthis">
-                      <div className="setitemprofile">
-                        {item.profilepicture}
-                      </div>
-                      {item.name}
-                    </div>
-                  </div>
-                ))}
+            {commentlistAll &&
+            commentlistAll.reduce((item, index, i) => {
+              if (i >= start && i <= end) {
+                const row = <TableRow key={i} data={index} />;
+                item.push(row);
+              }
+              return item;
+            }, [])}
+              
             </div>
           </div>
         </div>
@@ -278,6 +290,9 @@ const mixfunction2 =() =>{
             <button className="accept-post">ตกลง</button>
           </div>
         </div>
+      </div>
+      <div className="footer-show">
+       <button className="Btn-showmore-show" onClick={() => maxindex()}>แสดงเพิ่มเติม</button>
       </div>
     </div>
   );

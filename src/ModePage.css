@@ -4,11 +4,13 @@
   /* background-color: #1d1d1d; */
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
+  align-items: center;
+  
+  flex-direction: column;
 }
 .PageModeContent {
   width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
   /* display: flex; */
 }
 .box-show-mode {
@@ -32,7 +34,7 @@
 .NameTexts {
   font-size: 60px;
   font-family: "kanit";
-  color: rgb(24, 231, 5);
+  color: rgb(189, 72, 224);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -59,17 +61,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(224, 224, 224);
+  background-color: #000000d5;
   border-radius: 5px;
+  box-shadow: 0 5px 25px 0  #585858;
 }
 
 .Bar-selection {
+  padding: 15px;
   width: 100%;
-  height: 50px;
+  height: 25px;
   /* background-color:#09de6e;
     background-color:#df4893; */
   /* background-image: linear-gradient(to left, rgb(83, 127, 194),rgb(176, 103, 221)); */
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(202, 147, 238);
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -78,11 +82,11 @@
   font-family: "kanit";
   margin-top: 10px;
   font-size: 20px;
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 .Select-Mode-Dropdown {
   width: 100%;
-  height: 420px;
+  height: 300px;
 }
 .SelectionCss {
   position: absolute;
@@ -121,10 +125,7 @@
   /* border-radius: 10px; */
   /* display: flex; */
 }
-.setsortIMG {
-  margin-left: 5px;
-  width: 40px;
-}
+
 .box-mode-text {
   display: flex;
   width: 200px;
@@ -171,8 +172,11 @@
 }
 .Box-Right {
   font-family: "kanit";
-  width: 800px;
+  width: 900px;
   height: 280px;
+  border-radius: 5px;
+  /* box-shadow: 0 5px 25px 0  #585858; */
+  /* background-color: #e6e1e1; */
 }
 .numberBox-right {
   font-size: 18px;
@@ -331,10 +335,13 @@
   margin-top: 10px;
   margin-bottom: 15px;
   cursor: pointer;
-
+ transition: 300ms;
+ border-radius: 10px;
 }
 .itemlistAll-container:hover{
-  background-color: rgb(228, 225, 225);
+  box-shadow: 0 5px 25px 0  #585858;
+  padding: 20px;
+  transition: 200ms;
 }
 .itemlistAll-container:active{
   transform: scale(0.99);
@@ -402,7 +409,7 @@
   margin-right: 10px;
 }
 .tab-footer {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   width: 100%;
   height: 5px;
   border-radius: 10px;
@@ -444,4 +451,33 @@
   background-color: rgb(157, 158, 158);
   width: 100%;
   height: 100%;
+}
+.footer-Mode{
+  /* position: fixed; */
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background:linear-gradient(to  bottom,  rgb(255, 255, 255), rgba(150, 147, 147, 0.938) );
+  background:linear-gradient(to  bottom,  rgb(255, 255, 255), rgba(61, 61, 59, 0.938) );
+}
+.ButtonStyleshowmore-Mode{
+  margin-top: -20px;
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  font-family: 'kanit';
+  border:none;
+  outline: none;
+  background-color: rgba(53, 54, 52, 0.534);
+  color: #e4e6e5;
+  border-radius: 3px;
+}
+.ButtonStyleshowmore-Mode:hover{
+  background-color: chocolate;
+}
+.ButtonStyleshowmore-Mode:active{
+  /* transition: 200ms; */
+  transform: scale(0.95);
 }

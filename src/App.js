@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <Route>
         
-        <Route path="/" exact={true} component={HOME}/>
-        {/* <Route path="/Home" exact={true} component={HOME}/> */}
+        <Route path="/" exact={true} component={Mainwebsite}/>
+        <Route path="/Home" exact={true} component={HOME}/>
         <Route path="/PageDefault"   exact={true} component={Mainwebsite} />
         <Route path="/Mainwebsite" exact={true} component={Mainwebsite} />
         <Route path="/ShopScreen"    exact={true} component={Mainwebsite} />
