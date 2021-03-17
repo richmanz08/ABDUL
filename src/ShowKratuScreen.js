@@ -3,7 +3,14 @@ import ModePage from "./ModePage";
 import "./ShowKratu.css";
 import { Input } from "antd";
 import { Button, notification, Space } from 'antd';
-function ShowKratuScreen({ item }) {
+import id from '../src/components/BlogList'; 
+function ShowKratuScreen(props) {
+  
+  
+  
+  
+  const [newTerm, SetTerm] = useState(props.location.state);
+
   const maxindex = () => {
     setEnd(end + 2);
   };
@@ -64,7 +71,7 @@ const mixfunction2 =() =>{
     Setsticker(false);
   };
 
-  const [newTerm, SetTerm] = useState({item});
+  
   const DATATABLEkt = [
     { id: 14477, title: "ข้อมูลชุดที่ 1" },
     { id: 21145, title: "ข้อมูลชุดที่ 2" },
@@ -175,7 +182,7 @@ const mixfunction2 =() =>{
                   </div>
   );
   return (
-    <div className="Layout">
+    <div className="Layout"><div>{newTerm.blogs}</div>
       <div className="Content-align">
         <div className="BacktopBG-container">
           <img className="SetBGWHITE" src="./IMGshow/studybg.jpeg"></img>
@@ -190,7 +197,7 @@ const mixfunction2 =() =>{
                   </div>
                 </div>
                 <div className="Right-pic-controll">
-                  <div>{newTerm.picture}</div>
+                  
                   <text className="S-topic">ผู้โพสต์</text>
                   <text className="S-set">{item.name}</text>
                   <text className="S-topic">วันที่โพสต์</text>

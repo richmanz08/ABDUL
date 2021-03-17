@@ -1,49 +1,49 @@
 import React, { useState } from "react";
 import "./ModePage.css";
 import { Link } from "react-router-dom";
-import {useHistory} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 function ModePage(props) {
-  
-
-const history =useHistory()
-const routeChange = () =>{ 
-    let path = `Showkratu`; 
+  const history = useHistory();
+  const routeChange = () => {
+    let path = `Showkratu`;
     history.push(path);
-  }
+  };
   const maxindex = () => {
     setEnd(end + 2);
   };
   const [start, setStart] = useState("0");
   const [end, setEnd] = useState(4);
   // extension in a user
-  
- 
+
   const listmodeitems = [
     {
       value: "กีฬา",
       icons: (
         <img className="icons-M-MP" src="./IMGmodepng/sports.png" alt=""></img>
       ),
-      
-      sumpost:50,
-      description:  'เป็นต้นมา PUBG ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ'
+
+      sumpost: 50,
+      description:
+        "เป็นต้นมา PUBG ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ",
     },
     {
       value: "ครอบครัว",
       icons: (
         <img className="icons-M-MP" src="./IMGmodepng/family.png" alt=""></img>
       ),
-      sumpost:112,
-      description:  'เป็นต้นมา ครอบครัว ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ'
+      sumpost: 112,
+      description:
+        "เป็นต้นมา ครอบครัว ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ",
     },
     {
       value: "ความรัก",
       icons: (
         <img className="icons-M-MP" src="./IMGmodepng/love.png" alt=""></img>
       ),
-      sumpost:30,
-      description:  'เป็นต้นมา ความรัก ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ'
-     },
+      sumpost: 30,
+      description:
+        "เป็นต้นมา ความรัก ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ",
+    },
     {
       value: "งาน",
       icons: (
@@ -158,7 +158,9 @@ const routeChange = () =>{
   const datagame = [
     {
       id: 14477,
-      picture: (<img className="sizepictureset" src="./IMGmodepng/dota2.jpg"></img>),
+      picture: (
+        <img className="sizepictureset" src="./IMGmodepng/dota2.jpg"></img>
+      ),
       Topic:
         "Dota 2 ขึ้นแท่นเกมที่มีผู้ชมเฝ้าติดตามอย่างเหนียวแน่นที่สุดในด้าน Esports Hoodwink ฮีโร่ลำดับที่ 120 ของ Dota 2 ได้อัปเดตเข้าสู่เกมแล้ว พร้อมแพทช์ 7.28 Mistwoods พร้อมการเปลี่ยนแปลงมากมายในเกม โดยคาดว่าจะเป็น Hero เพียงคนเดียวที่จะเข้าเกมในปีนี้",
       like: "20",
@@ -254,62 +256,54 @@ const routeChange = () =>{
       like: "1211",
     },
   ];
-const [namemode,Setnamemode] = useState('กีฬา')
-const[description,SetDrescription] = useState( 'เป็นต้นมา PUBG ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ')
-const[iconsmode,Seticonsmode] = useState(null)
-const [sumpost,Setsum] = useState('50')
-const [saveIndex,Setsaveindex] = useState()
- 
-  if(iconsmode == null) {
-   return Seticonsmode(<img src="./IMGmodepng/sports.png"></img>)
- }
-  
+  const [namemode, Setnamemode] = useState("กีฬา");
+  const [description, SetDrescription] = useState(
+    "เป็นต้นมา PUBG ได้ทำให้เกิดเกมแนวใหม่ที่ทั้งเกมเมอร์และตลาดEsports ต่างเปิดรับเข้ามาอย่างเต็มใจทั้งยังเป็นความสดใหม่ของโลกเกมเมอ"
+  );
+  const [iconsmode, Seticonsmode] = useState(null);
+  const [sumpost, Setsum] = useState("50");
+  const [saveIndex, Setsaveindex] = useState();
 
- const Clickmode = (a,b) => {
-   Setsaveindex(a)
-   Setnamemode(a.value)
-   Seticonsmode(a.icons)
-   Setsum(a.sumpost)
-   SetDrescription(a.description)
-  //  window.location.reload(false); code นีใช้ในการ Refreh หน้า
- }
- const Table1 = [
- {
-   name:'กีฬา'
- },
- {
-   name:'ครอบครัว'
- },
- {
-   name:'ความรัก'
- }
+  if (iconsmode == null) {
+    return Seticonsmode(<img src="./IMGmodepng/sports.png"></img>);
+  }
 
- ];
+  const Clickmode = (a, b) => {
+    Setsaveindex(a);
+    Setnamemode(a.value);
+    Seticonsmode(a.icons);
+    Setsum(a.sumpost);
+    SetDrescription(a.description);
+    //  window.location.reload(false); code นีใช้ในการ Refreh หน้า
+  };
+  const Table1 = [
+    {
+      name: "กีฬา",
+    },
+    {
+      name: "ครอบครัว",
+    },
+    {
+      name: "ความรัก",
+    },
+  ];
 
- const TableRow = ({ data }) => (
-  <div className="itemlistAll-container"    onClick={()=>routeChange()} >
-  <div className="zonepicture" >{data.picture}</div>
-  <div className="zonecontent">
-    <div className="Text-content">{data.Topic}</div>
-  </div>
-</div>
-  
-);
+  const TableRow = ({ data }) => (
+    <div className="itemlistAll-container" onClick={() => routeChange()}>
+      <div className="zonepicture">{data.picture}</div>
+      <div className="zonecontent">
+        <div className="Text-content">{data.Topic}</div>
+      </div>
+    </div>
+  );
   return (
     <div className="PageModeContainer">
       <div className="PageModeContent">
         <div className="box-show-mode">
- 
-              
-
-
           <div className="Box-Left">
-           
             <div className="NameTexts">{namemode}</div>
 
-            <div className="boxImageitems">
-              {iconsmode}
-            </div>
+            <div className="boxImageitems">{iconsmode}</div>
           </div>
           <div className="Box-Right">
             <div className="NumberALLmode">
@@ -317,55 +311,32 @@ const [saveIndex,Setsaveindex] = useState()
               <div className="numberBox-right">{sumpost}</div>
               <div>กระทู้</div>
             </div>
-            <div className="meantext">
-              {description}
-            </div>
-            
-
+            <div className="meantext">{description}</div>
           </div>
-
-          
-
-
         </div>
         <div className="Select-Mode-Dropdown">
-          <div className="Bar-selection" >
-            เลือกหมวดหมู่
-           
+          <div className="Bar-selection">เลือกหมวดหมู่</div>
+
+          <div className="SelectionCtn">
+            <div className="set-wrap-selec">
+              {listmodeitems &&
+                listmodeitems.map((item, Index) => (
+                  <div
+                    className="box-mode-text"
+                    onClick={() => Clickmode(item, Index)}
+                  >
+                    <div className="setsizeiconsmode">{item.icons}</div>
+                    <div className="Name-mode-text">{item.value}</div>
+                  </div>
+                ))}
+            </div>
+            <div className="tab-footer"></div>
           </div>
-
-         
-             
-
-           
-              <div className="SelectionCtn">
-                <div className="set-wrap-selec">
-                  {listmodeitems &&
-                    listmodeitems.map((item, Index) => (
-                      <div className="box-mode-text" onClick={() =>Clickmode(item,Index)} >
-                        <div className="setsizeiconsmode">{item.icons}</div>
-                        <div className="Name-mode-text">{item.value}</div>
-                      </div>
-                    ))}
-                </div>
-                <div className="tab-footer"></div>
-              </div>
-            
-          
         </div>
         <div className="postshowlistfollowmode">
           <div className="headmodelist-text">หมวดหมู่-เกมส์</div>
-          {/* map */}
-          {/* {datagame &&
-            datagame.map((item, index) => (
-              <div className="itemlistAll-container"    onClick={()=>routeChange(item)} >
-                <div className="zonepicture" >{item.picture}</div>
-                <div className="zonecontent">
-                  <div className="Text-content">{item.Topic}</div>
-                </div>
-              </div>
-            ))} */}
-               {datagame &&
+
+          {datagame &&
             datagame.reduce((item, index, i) => {
               if (i >= start && i <= end) {
                 const row = <TableRow key={i} data={index} />;
@@ -374,16 +345,14 @@ const [saveIndex,Setsaveindex] = useState()
               return item;
             }, [])}
 
-
-
-
           {/* map */}
         </div>
       </div>
       <div className="footer-Mode">
-          <button className="ButtonStyleshowmore-Mode" onClick={() => maxindex()}>
-            โหลดเพิ่มเติม
-          </button></div>
+        <button className="ButtonStyleshowmore-Mode" onClick={() => maxindex()}>
+          โหลดเพิ่มเติม
+        </button>
+      </div>
     </div>
   );
 }

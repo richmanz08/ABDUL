@@ -24,10 +24,7 @@
   height: 650px;
   width: 100%;
 }
-.Courousel-item3 {
-  height: 650px;
-  width: 100%;
-}
+
 
 .imgset {
   margin-top: -200px;
@@ -239,11 +236,11 @@
   display: none;
 }
 .Containermodal2{
-  width: 900px;
+  width: 600px;
   height: 450px;
   position: absolute;
   top: 16%;
-  left: 50%;
+  left: 65%;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -337,10 +334,10 @@
   align-items: flex-start;
 }
 .Lastname-regis{
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .SLlastname{
-  margin-left: 229px;
+  /* margin-left: 229px; */
 }
 .row1{
   height: 30px;
@@ -387,4 +384,684 @@
   font-size: 12px;
    font-family: 'kanit';
    color: rgba(0, 0, 0, 0.466);
+}
+
+
+
+
+@media (max-width: 1850px) {
+  .icons-web{
+    margin-right: 750px;
+  }
+.loginbutton1{
+margin-left: 50px;
+margin-right: 15px;
+}
+.Containermodal{
+  left: 61%;
+}
+.Containermodal2{
+  left: 59%;
+}
+
+
+
+
+}
+@media (max-width: 1600px) {
+
+.Containermodal2{
+  left: 56%;
+}
+.inputstyleB{
+  width: 200px;
+}
+.inputstyleA{
+  width: 200px;
+}
+.settexttopic{
+  font-size: 14px;
+}
+.Box-regisstyle{
+  width: 270px;
+}
+
+
+
+li{
+  font-size:12px ;
+}
+.icons-web{
+  margin-right: 550px;
+}
+.t1{
+  font-size: 50px;
+}
+.t2{
+  font-size: 15px;
+}
+.loginbutton2{
+  width: 110px;
+  height: 35px;
+  font-size: 16px;
+}
+.Registered{
+  width: 110px;
+  height: 35px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.zonebutton{
+  margin-top: 120px;
+}
+.Courousel-item1 {
+  height: 700px;
+  
+}
+.Courousel-item2 {
+  height: 700px;
+  /* width: 100%; */
+}
+.Glass-Login{
+  height: 700px;
+}
+.OverlayContainer{
+  height: 700px;
+}
+.florr{
+  height: 160px;
+}
+.item1{
+  /* margin: ; */
+  padding: 0;
+  margin-top: 10px;
+}
+.item2{
+  /* margin:0 ; */
+  margin-top: 10px;
+    padding: 0;
+}
+.item3{
+  /* margin:0 ; */
+  margin-top: 10px;
+  padding: 0;
+}.Containermodal{
+  
+  left: 56%;
+  
+}
+
+  }
+@media (max-width:1450px){
+
+.Containermodal2{
+  left: 52%;
+  height: 400px;
+}
+.Box-regisstyle{
+  height: 400px;
+}
+
+  .tphone{
+    font-size: 15px;
+  }
+  .style-button{
+    font-size: 15px;
+  }
+  .loginbutton1{
+    width: 120px;
+    height: 35px;
+    font-size:18px ;
+  }
+  .Containermodal{
+  
+    left: 52%;
+    
+  }
+}
+@media (max-width:1370px){
+  .icons-web{
+    margin-right: 490px;
+  }
+}
+
+  
+ @media (max-width:1300px){
+   .BTN-accept-regis{
+     width: 80px;
+     height: 31px;
+     font-size: 13px;
+   }
+  .inputstyleA{
+    height: 25px;
+  }
+  .inputstyleB{
+    height: 25px;
+  }
+  .Containermodal2{
+    width: 500px;
+    margin-right: 5px;
+  }
+  
+  
+  
+  
+  
+  .Containermodal{
+  
+    left: 49%;
+    width: 570px;
+
+  }
+  
+  
+  .icons-web{
+    margin-right: 420px;
+  }
+.Teamtex{
+  font-size: 14PX;
+  
+}
+.namedev{
+  font-size: 9px;
+}
+.seticons{
+  width: 18px;
+  height: 18px;
+}
+ } 
+
+@media (max-width:1200px){
+  .icons-web{
+    margin-right: 350px;
+  }
+  .style-button{
+    font-size: 13px;
+  }
+  .Containermodal{
+  
+    left: 48%;
+    width: 550px;
+
+  }
+}
+
+@media (max-width:1100px){
+.BTN-accept-regis{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+  .settexttopic{
+  font-size: 12px;
+}
+.Containermodal2{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.Text{
+  display: none;
+}
+.Box-regisstyle{
+  width: 100%;
+}
+.Boxregis{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+  .Containermodal{
+  
+    left: 45%;
+    width: 450px;
+    height: 280px;
+
+  }
+ 
+ 
+  .icons-web{
+    margin-right: 250px;
+  }
+  .Courousel-item1 {
+    height: 600px;
+    
+  }
+  .Courousel-item2 {
+    height: 600px;
+    /* width: 100%; */
+  }
+  .Glass-Login{
+    height: 600px;
+  }
+  .OverlayContainer{
+    height: 600px;
+  }
+  li{
+    font-size: 10px;
+  }
+  .Groupicons{
+    /* height: 30px;
+    margin: 0;
+    width: 200px; */
+    display: flex;
+    margin-top: 20px;
+
+  }
+  .item4{
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width:1000px){
+  .icons-web{
+    margin-right: 350px;
+    width: 80px;
+    height: 80px;
+  }
+  .loginbutton1{
+    display: none;
+  }
+  li{
+    font-size: 8px;
+  }
+  .iconsphone{
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+
+ @media (max-width:900px){
+  
+  .Containermodal{
+  
+    left: 43%;
+    width: 400px;
+
+  }
+  .setUP{
+    font-size: 14px;
+  }
+  .singingeadertext{
+    font-size: 18px;
+  }
+  .BTN-accept-loginstyle{
+    font-size: 13px;
+  }
+  
+  
+  .icons-web{
+    margin-right: 250px;
+    width: 80px;
+    height: 80px;
+  }
+  li{
+    font-size: 6px;
+  }
+
+  .Teamtex{
+    font-size: 12px;
+  
+  }
+  .Groupicons{
+
+    display: flex;
+
+  }
+  .seticons{
+    margin: 1.5 ;
+  }
+  .item4{
+  justify-content: flex-start;
+  align-items: center;
+ padding: 0;
+ padding-right: 10px;
+
+  }
+  .item2{
+    margin-left: 10px;
+  }
+  .item3{
+    margin-left: 10px;
+  }
+  .hli{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width:800px) {
+  .Containermodal2{
+    height: 380px;
+  }
+.Box-regisstyle{
+  height: 70px;
+}
+.settexttopic{
+  font-size: 10px;
+}
+  .Text-regis{
+    font-size: 15px;
+  }
+.inputstyle{
+  
+  width: 200px;
+}
+.setUP{
+  margin-right: 95px;
+}
+.Containermodal{
+  left: 48%;
+  width: 350px;
+  height: 260px;
+}
+.BTN-accept-loginstyle{
+  width: 80px;
+  height: 32px;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+.t1{
+  font-size: 40px;
+}
+.t2{
+  font-size: 13px;
+}
+.icons-web{
+  width: 70px;
+  height: 70px;
+  margin-right: 150px;
+}
+.iconsphone{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 1px;
+}
+.Courousel-item1 {
+  height: 650px;
+  
+}
+.Courousel-item2 {
+  height: 650px;
+  /* width: 100%; */
+}
+.Glass-Login{
+  height: 650px;
+}
+.OverlayContainer{
+  height: 650px;
+}
+} 
+
+@media (max-width:700px) {
+ .Box-regisstyle{
+   height: 40px;
+ }
+ .Containermodal2{
+   width: 260px;
+   height: 350px;
+ }
+
+
+  .Containermodal{
+    width: 290px;
+    left: 51%;
+  }
+  .setUP{
+    font-size: 12px;
+  }
+  .singingeadertext{
+    font-size: 16px;
+  }
+  .BTN-accept-loginstyle{
+    width: 75px;
+    height: 30px;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  .t2{
+    width: 190px;
+  }
+  
+  .Body{
+     width: 500px;
+   }
+
+   .icons-web{
+    width: 70px;
+    height: 70px;
+    margin-right: 100px;
+  }
+  .style-button{
+    font-size: 10px;
+  }
+
+
+
+}
+
+@media (max-width:630px){
+  .Containermodal{
+    width: 250px ;
+    left: 50%;
+  }
+}
+
+
+@media (max-width: 600px){
+ .Containermodal2{
+   top: 28%;
+   left: 26%;
+   right: 70%;
+ }
+
+
+
+
+
+  .Containermodal{
+    top: 32%;
+    left: 29%;
+
+  }
+.hli{
+  font-size: 12px;
+}
+.t2{
+  width: 200px;
+}
+.icons-web{
+  margin-right: 50px;
+}
+.Courousel-item1 {
+  height: 650px;
+  
+}
+.Courousel-item2 {
+  height: 650px;
+  /* width: 100%; */
+}
+.Glass-Login{
+  height: 650px;
+}
+.OverlayContainer{
+  height: 650px;
+}
+.florr{
+  height: fit-content ;
+  padding-bottom: 15px;
+}
+.tphone{
+  font-size: 10px;
+}
+.Glass-Login{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.Body{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.zonebutton{
+  margin-top: 360PX;
+}
+.Body{
+  padding-left: 10px;
+
+}
+}
+
+
+
+
+@media(max-width:530px){
+  .Containermodal2{
+    left: 23%;
+  }
+  .hli{
+    font-size: 10px;
+  }
+}
+@media(max-width:500px){
+
+ .Containermodal{
+   left: 24%;
+ }
+
+  .Group-tool{
+    padding-left: 10px;
+    /* width: 464px; */
+  }
+  
+ 
+}
+@media(max-width:470px){
+  .Containermodal2{
+    left: 21%;
+  }
+  .style-button{
+    display: none;
+  }
+  .iconsphone{
+    margin-left: 200px;
+  }
+}
+
+@media(max-width:450px){
+  .Containermodal2{
+    left: 19%;
+  }
+  .Containermodal{
+    left: 21%;
+  }
+  li{display: none;}
+  .item1{
+    margin-left: 10px;
+    
+  }
+  .florr{
+    display: none;
+  }
+  
+  .Teamtex{
+    width: 110px;
+    display: flex;
+  }
+  .namedev{
+    display: flex;
+    width: 60px;
+  }
+  .Groupicons{
+    /* height: fit-content; */
+    margin-top: 0;
+  }
+  .Courousel-item1 {
+    height: 812px;
+    
+  }
+  .Courousel-item2 {
+    height: 812px;
+    /* width: 100%; */
+  }
+  .Glass-Login{
+    height: 812px;
+  }
+  .OverlayContainer{
+    height: 812px;}
+ .Line-Hori2{
+   display: none;
+ }
+ .iconsphone{
+   margin-left: 150px;
+ }
+}
+
+
+
+
+
+
+
+@media(max-width:420px){
+  .Containermodal2{
+    left: 17%;
+  }
+  .iconsphone{
+    margin-left: 150px;
+  }
+
+  
+}
+@media(max-width:380px){
+  .Containermodal2{
+    left: 16%;
+  }
+
+  .Containermodal{
+    top: 35%;
+    left: 17%;
+  }
+.iconsphone{
+  
+    margin-left: 120px;
+    
+  }
+}
+
+@media(max-width:350px){
+  .Containermodal2{
+    left: 14%;
+  }
+  .Containermodal{
+    left: 13%;
+  }
+}
+
+
+@media(max-width:320px){
+  .Containermodal2{
+    left: 11%;
+  }
+  .Containermodal{
+    left: 12%;
+  }
+  .iconsphone{
+  
+      margin-left: 80px;
+      
+    }
 }

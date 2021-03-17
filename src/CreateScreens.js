@@ -75,7 +75,7 @@ function CreateScreens() {
                           id="upload-input"
                           size="small"
                           type="file"
-                          accept=".jpg,.jpeg,.gif,.png,.mov,.mp4"
+                          accept=".jpg,.jpeg,.png,"
                           onChange={handleImageChange}
                         />
                       </div>
