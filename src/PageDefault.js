@@ -126,6 +126,10 @@ function PageDefault() {
     setEnd(end + 2);
   };
   const [start, setStart] = useState("0");
+  // let start = 0;
+  // const setStart = (in) => {
+  //   start = in
+  // }
   const [end, setEnd] = useState(2);
 
   const Top4 = [
@@ -267,7 +271,7 @@ function PageDefault() {
         <div className="Area-new-post">
           <div className="TextPort">กระทู้ล่าสุด</div>
           {DataTest &&
-            DataTest.reduce((item, index, i) => {
+            DataTest.reduce((item,index, i) => {
               if (i >= start && i <= end) {
                 const row = <TableRow key={i} data={index} />;
                 item.push(row);
@@ -279,7 +283,7 @@ function PageDefault() {
       </div>
       <div className="footer-b">
           <button className="ButtonStyleshowmore" onClick={() => maxindex()}>
-            โหลดเพิ่มเติม
+            โหลดเพิ่มเติม 
           </button></div>
     </div>
   );

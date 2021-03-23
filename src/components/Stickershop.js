@@ -84,8 +84,8 @@ function Stickershop() {
   
       const[sumsticker,setSticker] = useState(StickerALL.length)
      const[price,Setprice] = useState('')
-     const [idSTK,SetStkid] = useState('')
-     const[A,setA] = useState()
+     const [idSTK,SetStkid] = useState()
+     const[A,setA] = useState([113,112,119,115])
      const[starUs,setUs] = useState('20')
      const [eventBuy,SetEven] = useState()
      const Paypal =(e) => {
@@ -94,7 +94,9 @@ function Stickershop() {
        SetStkid(e.id);
 
         let DataM  ;
-             DataM = 112;
+             DataM = 119;
+          
+            
            if(idSTK == DataM ){
               return showMessagefail()
            }
@@ -129,7 +131,7 @@ function Stickershop() {
         
         
         <div>
-          <text>เทส{idSTK} ดาวคงเหลือ{starUs} ราคา price {price}</text>
+          <text>เทส{idSTK} ดาวคงเหลือ{starUs} ราคา price {price} </text>
         <text className="header-all-list-txt"> item all {sumsticker} pcs</text>
             <div className="classname-container">
               {StickerALL &&

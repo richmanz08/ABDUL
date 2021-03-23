@@ -45,10 +45,10 @@ setAccount(false)
     <div className="BarItem">
       <img className="icons-logo-add" src="./IMGadmin/logo.png"></img>
       <text className="t-addmin">Admin Screen</text>
-      <button className="setBstyle" onClick={clickedDashbord}>Dashbord</button>
-      <button className="setBstyle" onClick={clickedAccount}>Management Account</button>
-      <button className="setBstyle" onClick={clickedRequest}>Request</button>  
-      <button className="setBstyle" onClick={clickedSandP}>Sticker/Portrait</button>
+      <button className="setBstyle" onClick={clickedDashbord}><text>Dashbord</text><div className="btndashcssLine"></div> </button>
+      <button className="setBstyle" onClick={clickedAccount}><text>Management Account</text><div className="btndashcssLine"></div></button>
+      <button className="setBstyle" onClick={clickedRequest}><text>Request</text><div className="btndashcssLine"></div></button>  
+      <button className="setBstyle" onClick={clickedSandP}><text>Sticker/Portrait</text><div className="btndashcssLine"></div></button>
       
 
     </div>

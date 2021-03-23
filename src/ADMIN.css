@@ -1,7 +1,7 @@
 .Layout-admin{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(49, 49, 49);
+    /* background-color: rgb(0, 0, 0); */
 }
 .BarItem{
     padding-left: 50px;
@@ -18,7 +18,7 @@
     font-family: 'kanit';
     font-size: 30px;
     margin-left: 50px;
-    margin-right: 300px;
+    margin-right: 180px;
 }
 .icons-logo-add{
     /* width: 100px; */
@@ -30,12 +30,29 @@
     }
   }
   .setBstyle{
+      width: 190px;
+      font-family: 'kanit';
+      font-size: 16px;
       cursor: pointer;
+      color: #fff;      
+      background-color: rgba(0, 0, 0, 0);
+      outline: none;
+      border: none;
+  }
+  .setBstyle:hover .btndashcssLine{
+visibility:unset;
+
+  }
+  .btndashcssLine{
+      visibility: hidden;
+      width: 180px;
+      height: 3px;
+      background-color: rgb(198, 146, 247);
   }
   .Body-Dashbord{
       width: 100%;
-      padding-left: 100px;
-      padding-top: 100px;
+      display: flex;
+      justify-content: center;
       /* background-color: rgb(255, 255, 255); */
       /* height: 500px; */
    
@@ -45,27 +62,14 @@
       
   }
 
-  .Body-Management{
-    width: 100%;
-    padding-left: 100px;
-    padding-top: 100px;
-    /* background-color: rgb(235, 91, 91); */
-    /* height: 500px; */
-   
-}
-.managementDisplay{
-    display: none;
-}
+
 
 .Body-Request{
     width: 100%;
     display: flex;
-    padding-left: 100px;
-    padding-top: 100px;
-    /* justify-content: center; */
-    /* background-color: rgb(42, 124, 56);s */
-    /* height: 500px; */
-
+    justify-content: center;
+    background-color: #fff;
+    
    
 }
 .requestDisplay{
@@ -86,72 +90,360 @@
     font-size: 25px;
     font-family: 'kanit';
 }
-.table-css{
-    margin-left: 60px;
-    display: flex;
-    border: 1px solid ;
-    width: 600px;
-    background-color: yellow;
-    align-items: center;
-}
+
 .header-username{
-    margin-left: 20px;
-    font-size: 20px;
 }
+
 .header-password{
-    margin-left: 120px;
-    font-size: 20px;
+   
 }
 .header-delete{
-    font-size: 20px;
-    margin-left: 120px;
+   
 }
-.itemusername{
-    margin-left: 60px;
-    width: 190px;
-    display: flex;
-    /* background-color: teal; */
-    /* flex-direction: row; */
-}
-.itempassword{
-    margin-left: 40px;
-    width: 190px;
-    display: flex;
-    /* background-color: rgb(58, 128, 0); */
-    /* flex-direction: row; */
-}
-.itemdelete{
-    margin-left: 40px;
-    width: 100px;
-    color: tomato;
-    cursor: pointer;
-    /* display: flex; */
 
-    /* background-color: rgb(58, 128, 0); */
-    /* flex-direction: row; */
+
+.setBoxrequest{
+    font-family: 'kanit';
+    display: flex;
+    margin: 1px;
+    background-color: rgb(255, 255, 255);
+    /* flex-direction: column; */
+    /* margin: 50px; */
+    /* margin-bottom: 20px; */
+    color: rgb(22, 22, 22);
+    font-weight: 300;
+}
+
+.Layout-Request{
+    /* background-color: #fff; */
+    /* width: 100%; */
+    height: 100%;
+}
+.Table-Style-Request{
+    /* justify-content: space-around; */
+    display: flex;
+    margin-top: 25px;
+    width: 1300px;
+    /* background-color: aqua; */
+    height: 65px;
+    background-color: rgb(233, 232, 232);
+    /* border: 3px solid #777777; */
+    font-family: 'kanit';
+    align-items: center;
+    color: #333;
+}
+.tabSpaceReH{
+    width: 1.9px; 
+    height: 100%;
+    background-color: #cfcece;
+
+}
+.lundub{
+    
+    display: flex;
+    justify-content: center;
+    width: 90px;
+}
+.kratuid{
+     
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+.whorequest{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+.topicHstyle{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+.accept-view-delete{
+    display: flex;
+    justify-content: center;
+    width: 196px;
+    /* background-color: blue; */
+}
+.lundub-i{
+    display: flex;
+    width: 90px;
+    height: 60px;
+    align-items: center;
+    /* padding-left: 20px; */
+    justify-content: center;
+}
+.kratuid-i{
+    display: flex;
+    width: 150px;
+    height: 60px;
+    align-items: center;
+    
+    justify-content: center;
+}
+.whorequest-i{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+}
+.topicHstyle-i{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* justify-content: center; */
+    width: 600px;
+    align-items: center;
+}
+.accept-view-delete-i{
+    margin-left: 8px;
+  width: 198px;
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: darkolivegreen; */
+}
+.btn-chekRequest{
+    
+    color: rgb(244, 240, 247);
+    background-color: rgb(231, 129, 231);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 5px;
+    width: 70px;
+}
+.btn-chekRequest:active{
+   transform: scale(0.91);
+}
+.btn-cclickdelete{
+    margin-left: 2px;
+    margin-right: 2px;
+    color: rgb(244, 240, 247);
+    background-color: rgb(224, 71, 122);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 5px;
+    width: 70px;
+}
+.btn-cclickdelete:active{
+    transform: scale(0.91);
+ }
+.btn-acceptRequest{
+    color: rgb(255, 255, 255);
+    background-color: rgb(120, 167, 116);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 5px;
+    width: 70px;
+}
+.btn-acceptRequest:active{
+    transform: scale(0.91);
+ }
+ .Checkbox-View{
+     display: flex;
+     flex-direction: column;
+ }.Checkshowcontainer{
+     font-family: 'kanit';
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: #cfcece;
+    border-radius: 5px;   
+    box-shadow: 0 5px 25px 0  #585858;
+}
+.displayCheckshow{
+    display: none;
+}
+.setCloseCheckmodal{
+    position: absolute;
+    /* float:right; */
+    width: 25px;
+    height: 25px;
+    margin-left: 555px;
+    cursor: pointer;
+}
+.setCloseCheckmodal:active{
+    transform: scale(0.80);
+}
+.showpicture-forchek{
+    width: 300px;
+    
+}
+.Detail-forcheck{
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    overflow-y: scroll;
+    height: 100px;
+    color: #000;
+}
+.topic-forcheck{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.barRe{
+    /* display: flex; */
+    width: 100%;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+}
+.setpurmmargin{
+    margin-top: 10px;
+}
+
+.Body-Management{
+    width: 100%;
+    /* padding-left: 100px;
+    padding-top: 100px; */
+    /* background-color: rgb(235, 91, 91); */
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+   
+}
+.managementDisplay{
+    display: none;
+}
+.Layout-Account{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    /* margin-bottom: 20px; */
+    /* background-color: darkred; */
+    width: 1300px;
+    /* height: 50px; */
+    /* background-color: blue; */
+}
+.table-css{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    /* color: rgb(199, 22, 22); */
+    background-color: #e9e8e8;
+    /* justify-content: center; */
+    align-items: center;
 }
 .rowtable{
     margin-top: 10px;
     display: flex;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
 }
-.setBoxrequest{
+.itemusername{
     display: flex;
-    flex-direction: column;
-    /* margin: 50px; */
-    margin-bottom: 20px;
+    width: 500px;
+    font-size: 16px;
+    /* padding-left: 50px; */
+    justify-content: center;
+  
+}
+.itempassword{
+    font-size: 16px;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    /* padding-left: 50px; */
+}
+.itemdelete{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(219, 129, 129);
+    color: #fff;
+    margin-left: 85px;
+    display: flex;
+    font-family: 'kanit';
+    cursor: pointer;
+   width: 120px;
+   padding: 5px;
+   justify-content: center;
+    
+}
+.itemdelete:hover{
+    background-color: rgb(216, 58, 52);  
+}
+.itemdelete:active{
+    transform: scale(0.95);
+}
+.header-username{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.header-password{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+.header-delete{
+   display: flex;
+   width: 280px;
+    justify-content: center;
+}
+.AC-barline{
+    width: 1.9px;
+    height: 100%;
+    background-color: #cfcece;
+}
+
+
+/*                                                          --------DASHBORD IN HERE CSS */
+.Boxdashbord-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:20px;
+    padding: 30px;
+ width: 100%;
+ height: 600px;
+ border-radius: 4px;
+ background-color: teal;
+}
+.dashbordCSS{
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 1300px;
+    /* background-color: tomato; */
+}
+.Boxdashitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 25px 0  #585858;
+}
+.settext-diitem{
+    margin-top: 10px;
+    font-size: 14px;
     color: #fff;
 }
-.Checkshowcontainer{
+.Group-DITEM{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    height: 300px;
-    width: 300px;
-    background-color: #fff;
-}
-.displayCheckshow{
-    display: none;
+    justify-content: center;
+    align-items: center;
 }
